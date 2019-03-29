@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ywu-vc-HiU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="iconHome" selectedImage="iconHomeSelected" id="baD-Ue-bhc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="133.5832083958021"/>
+        </scene>
+        <!--Setting-->
+        <scene sceneID="CNI-u1-P97">
+            <objects>
+                <viewController id="abq-5J-ZDJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fES-8V-R0J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Ke7-ya-puI"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Setting" image="iconSettings" selectedImage="iconSettings" id="1bB-bl-zhP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LzT-a3-N3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2231" y="444"/>
+        </scene>
+        <!--Custom Tab Bar View Controller-->
+        <scene sceneID="390-cj-udZ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Ywu-vc-HiU" customClass="SSCustomTabBarViewController" customModule="SSCustomTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yWc-Pt-lLs" customClass="SSCustomTabBar" customModule="SSCustomTabBar" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="1" green="0.62745098039215685" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layerFillColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedTabTintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="waveHeight">
+                                <real key="value" value="17"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="upAnimationPoint">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="7QR-in-pTQ"/>
+                        <segue destination="H3E-Sj-dq8" kind="relationship" relationship="viewControllers" id="jLd-zc-Wdd"/>
+                        <segue destination="JzW-q3-crV" kind="relationship" relationship="viewControllers" id="clE-Fd-g0o"/>
+                        <segue destination="lPc-z6-R8p" kind="relationship" relationship="viewControllers" id="X4Z-mE-aUO"/>
+                        <segue destination="abq-5J-ZDJ" kind="relationship" relationship="viewControllers" id="oA0-LQ-lO2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q4w-Rl-b61" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--shou-->
+        <scene sceneID="eDp-yZ-BIe">
+            <objects>
+                <viewController id="H3E-Sj-dq8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4uK-7X-W3Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VmW-GB-kRu"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="shou" image="iconKickstand" selectedImage="iconKickstandSelected" id="oi7-PG-NY8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n6i-57-yrs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="909"/>
+        </scene>
+        <!--Add-->
+        <scene sceneID="veh-qF-3Eu">
+            <objects>
+                <viewController id="JzW-q3-crV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7B4-6u-xMz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Hmn-K6-0vq"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add" image="iconAdd" selectedImage="iconAddSelected" id="4SB-gB-Tt3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j1N-85-z0Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868" y="921"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="Yn0-cs-Olh">
+            <objects>
+                <viewController id="lPc-z6-R8p" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c7H-Nt-Af8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="5ai-67-j3l"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="iconProfile" selectedImage="iconProfileSelected" id="DMt-Wd-slE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ywe-RI-4jE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1556" y="959"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iconAdd" width="25" height="25"/>
+        <image name="iconAddSelected" width="25" height="25"/>
+        <image name="iconHome" width="25" height="25"/>
+        <image name="iconHomeSelected" width="25" height="26"/>
+        <image name="iconKickstand" width="25" height="25"/>
+        <image name="iconKickstandSelected" width="25" height="25"/>
+        <image name="iconProfile" width="25" height="25"/>
+        <image name="iconProfileSelected" width="25" height="25"/>
+        <image name="iconSettings" width="25" height="25"/>
+    </resources>
+</document>
