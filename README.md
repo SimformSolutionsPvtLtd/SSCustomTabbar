@@ -6,6 +6,7 @@
 [![License](https://img.shields.io/cocoapods/l/SSCustomTabbar.svg?style=flat)](https://cocoapods.org/pods/SSCustomTabbar)
 [![Platform](https://img.shields.io/cocoapods/p/SSCustomTabbar.svg?style=flat)](https://cocoapods.org/pods/SSCustomTabbar)
 [![Swift Version](https://img.shields.io/cocoapods/p/SSCustomTabbar.svg?style=flat)](https://cocoapods.org/pods/SSCustomTabbar)
+
 ![Example](https://raw.githubusercontent.com/simformsolutions/SSCustomTabbar/master/SSCustomTabBar/Screenshots/customTabbar.gif)
 
 ## Requirements
