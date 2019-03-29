@@ -60,5 +60,5 @@ SSCustomTabbar is available under the MIT license. See the LICENSE file for more
 
 [PR-image]:https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [PR-url]:http://makeapullrequest.com
-[swift-image]:https://img.shields.io/badge/swift-3.0-orange.svg
+[swift-image]:https://img.shields.io/badge/swift-4.2-orange.svg
 [swift-url]: https://swift.org/
