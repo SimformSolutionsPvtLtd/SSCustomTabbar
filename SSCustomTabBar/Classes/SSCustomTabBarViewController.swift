@@ -12,7 +12,7 @@ import UIKit
 /// Default index value for priviousSelectedIndex
 private let defaultIndexValue = -1
 
-class SSCustomTabBarViewController: UITabBarController {
+public class SSCustomTabBarViewController: UITabBarController {
     
     
     /// Tabbar height
@@ -40,10 +40,10 @@ class SSCustomTabBarViewController: UITabBarController {
     private var kUpAnimationPoint: CGFloat = 20
     
     private var priviousSelectedIndex: Int = defaultIndexValue
-
-    override func viewDidLoad() {
+    
+    override public func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -51,7 +51,7 @@ class SSCustomTabBarViewController: UITabBarController {
     /// Notifies the view controller that its view was added to a view hierarchy.
     ///
     /// - Parameter animated: variable for namiation
-    override func viewDidAppear(_ animated: Bool) {
+    override public func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if self.priviousSelectedIndex == defaultIndexValue {
             if let item = self.tabBar.selectedItem {
@@ -95,13 +95,13 @@ class SSCustomTabBarViewController: UITabBarController {
 
 // MARK: - set bar height
 extension SSCustomTabBarViewController {
-    override func viewWillLayoutSubviews() {
+    override public func viewWillLayoutSubviews() {
         guard var height = kBarHeight else { return }
         height += self.view.safeAreaInsets.bottom
         var tabBarFrame = self.tabBar.frame
         tabBarFrame.size.height = height
         tabBarFrame.origin.y = UIScreen.main.bounds.height - height
-         self.tabBar.frame = tabBarFrame
+        self.tabBar.frame = tabBarFrame
         self.tabBar.clipsToBounds = false
     }
 }
@@ -116,7 +116,7 @@ extension SSCustomTabBarViewController {
     /// - Parameters:
     ///   - tabBar: The tab bar that is being customized.
     ///   - item: The tab bar item that was selected.
-    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+    override public func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         
         if let uSelf = self.tabBar as? SSCustomTabBar, let items = uSelf.items, let index = items.firstIndex(of: item), index != self.priviousSelectedIndex {
             
@@ -169,7 +169,7 @@ extension SSCustomTabBarViewController {
         if let uSelf = self.tabBar as? SSCustomTabBar {
             UIView.animate(withDuration: 0.9, delay: 0.0, usingSpringWithDamping: 0.57, initialSpringVelocity: 0.0, options: [], animations: { () -> Void in
                 uSelf.setDefaultlayoutControlPoints(waveHeight: uSelf.minimalHeight, locationX: changeValue)
-              
+                
             }, completion: { _ in
                 uSelf.animating = false
             })
@@ -177,9 +177,6 @@ extension SSCustomTabBarViewController {
                 view.frame = CGRect(x: view.frame.origin.x, y: view.frame.origin.y - self.kUpAnimationPoint, width: view.frame.width, height: view.frame.height)
             }, completion: nil)
         }
-        
-        
-        
     }
     
 }

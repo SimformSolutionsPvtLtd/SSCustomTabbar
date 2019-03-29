@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SSCustomTabBar: UITabBar {
+public class SSCustomTabBar: UITabBar {
     
     
     /// Fill color of back wave layer
@@ -17,7 +17,7 @@ class SSCustomTabBar: UITabBar {
             return UIColor(cgColor: kLayerFillColor)
         }
         set{
-           kLayerFillColor = newValue.cgColor
+            kLayerFillColor = newValue.cgColor
         }
     }
     
@@ -107,21 +107,21 @@ class SSCustomTabBar: UITabBar {
         }
     }
     
-
+    
     /// Draws the receiver’s image within the passed-in rectangle.
     ///
     /// - Parameter rect: rect of view
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         super.draw(rect)
         self.setupTabBar()
     }
-
+    
 }
 
 
 // MARK: - Setup Tabbar
 extension SSCustomTabBar {
-
+    
     func setupTabBar() {
         self.isTranslucent = true
         self.backgroundColor = UIColor.clear

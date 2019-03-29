@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SSCustomTabbar_Example' do
+  pod 'SSCustomTabbar', :path => '../'
+
+  target 'SSCustomTabbar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
