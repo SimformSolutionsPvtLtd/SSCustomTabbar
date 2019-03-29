@@ -5,7 +5,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SSCustomTabbar.svg?style=flat)](https://cocoapods.org/pods/SSCustomTabbar)
 [![License](https://img.shields.io/cocoapods/l/SSCustomTabbar.svg?style=flat)](https://cocoapods.org/pods/SSCustomTabbar)
 [![Platform](https://img.shields.io/cocoapods/p/SSCustomTabbar.svg?style=flat)](https://cocoapods.org/pods/SSCustomTabbar)
-[![Swift Version](https://img.shields.io/cocoapods/s/SSCustomTabbar.svg?style=flat)](https://cocoapods.org/pods/SSCustomTabbar)
+[![Swift Version][swift-image]][swift-url]
 [![PRs Welcome][PR-image]][PR-url]
 
 ![Example](https://raw.githubusercontent.com/simformsolutions/SSCustomTabbar/master/SSCustomTabBar/Screenshots/customTabbar.gif)
@@ -60,3 +60,5 @@ SSCustomTabbar is available under the MIT license. See the LICENSE file for more
 
 [PR-image]:https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [PR-url]:http://makeapullrequest.com
+[swift-image]:https://img.shields.io/badge/swift-3.0-orange.svg
+[swift-url]: https://swift.org/
