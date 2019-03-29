@@ -50,15 +50,16 @@ You can change:
 
 ## Contribute
 
-We would love you for the contribution to SSCustomTabMenu, check the LICENSE file for more info.
+We would love you for the contribution to SSCustomTabbar, check the LICENSE file for more info.
 
 ## License
 
-SSCustomTabbar is available under the MIT license. See the LICENSE file for more info.
+SSCustomTabbar is Distributed under the MIT license. See ``LICENSE`` for more information..
 
-## Meta
 
 [PR-image]:https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [PR-url]:http://makeapullrequest.com
 [swift-image]:https://img.shields.io/badge/swift-4.2-orange.svg
 [swift-url]: https://swift.org/
+[license-image]: https://img.shields.io/badge/License-MIT-blue.svg
+[license-url]: LICENSE
