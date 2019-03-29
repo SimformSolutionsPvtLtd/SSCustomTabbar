@@ -6,6 +6,7 @@
 [![License](https://img.shields.io/cocoapods/l/SSCustomTabbar.svg?style=flat)](https://cocoapods.org/pods/SSCustomTabbar)
 [![Platform](https://img.shields.io/cocoapods/p/SSCustomTabbar.svg?style=flat)](https://cocoapods.org/pods/SSCustomTabbar)
 [![Swift Version](https://img.shields.io/cocoapods/p/SSCustomTabbar.svg?style=flat)](https://cocoapods.org/pods/SSCustomTabbar)
+[![PRs Welcome][PR-image]][PR-url]
 
 ![Example](https://raw.githubusercontent.com/simformsolutions/SSCustomTabbar/master/SSCustomTabBar/Screenshots/customTabbar.gif)
 
@@ -47,10 +48,15 @@ You can change:
 
 ![alt text](https://raw.githubusercontent.com/simformsolutions/SSCustomTabbar/master/SSCustomTabBar/Screenshots/Description.png)
 
-## Author
+## Contribute
 
-Sumit Goswami, sumit.g@simformsolutions.com
+We would love you for the contribution to SSCustomTabMenu, check the LICENSE file for more info.
 
 ## License
 
 SSCustomTabbar is available under the MIT license. See the LICENSE file for more info.
+
+## Meta
+
+[PR-image]:https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
+[PR-url]:http://makeapullrequest.com
