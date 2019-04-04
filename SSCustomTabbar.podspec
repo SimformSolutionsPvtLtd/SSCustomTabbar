@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name                  = 'SSCustomTabbar'
-    s.version               = '1.1'
+    s.version               = '1.0'
     s.platform              = :ios
     s.swift_version         = '4.2'
     s.summary               = 'Simple Animated tabbar with native control.'
@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '11.0'
 
 #s.source_files = 'SSCustomTabbar/Classes/*.swift'
-s.source       = { :git => "https://github.com/simformsolutions/SSCustomTabbar.git",:tag => s.version, :commit => "f1afcc0c4202833d71d369e15c883855152f44fe" }
+s.source       = { :git => "https://github.com/simformsolutions/SSCustomTabbar.git",:tag => s.version }
 s.source_files  = 'SSCustomTabbar/Classes/*.swift'
   # s.resource_bundles = {
   #   'SSCustomTabbar' => ['SSCustomTabbar/Assets/*.png']
