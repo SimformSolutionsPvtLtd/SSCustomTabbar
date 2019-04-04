@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name                  = 'SSCustomTabbar'
-    s.version               = '1.0'
+    s.version               = '1.2'
     s.platform              = :ios
     s.swift_version         = '4.2'
     s.summary               = 'Simple Animated tabbar with native control.'
