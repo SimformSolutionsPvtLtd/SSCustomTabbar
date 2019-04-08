@@ -56,7 +56,6 @@ We would love you for the contribution to SSCustomTabMenu, check the LICENSE fil
 
 SSCustomTabbar is available under the MIT license. See the LICENSE file for more info.
 
-## Meta
 
 [PR-image]:https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [PR-url]:http://makeapullrequest.com

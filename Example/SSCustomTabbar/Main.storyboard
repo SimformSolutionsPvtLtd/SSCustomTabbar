@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="1072.8" y="133.5832083958021"/>
         </scene>
-        <!--Setting-->
+        <!--Chat-->
         <scene sceneID="CNI-u1-P97">
             <objects>
                 <viewController id="abq-5J-ZDJ" sceneMemberID="viewController">
@@ -36,7 +36,7 @@
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ke7-ya-puI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Setting" image="iconSettings" selectedImage="iconSettings" id="1bB-bl-zhP"/>
+                    <tabBarItem key="tabBarItem" title="Chat" image="iconChat" selectedImage="iconChatSelected" id="1bB-bl-zhP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LzT-a3-N3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,7 +82,7 @@
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
         </scene>
-        <!--shou-->
+        <!--Favorite-->
         <scene sceneID="eDp-yZ-BIe">
             <objects>
                 <viewController id="H3E-Sj-dq8" sceneMemberID="viewController">
@@ -92,13 +92,13 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VmW-GB-kRu"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="shou" image="iconKickstand" selectedImage="iconKickstandSelected" id="oi7-PG-NY8"/>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="iconFavorite" selectedImage="iconFavoriteSelected" id="oi7-PG-NY8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6i-57-yrs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="134" y="909"/>
         </scene>
-        <!--Add-->
+        <!--Video-->
         <scene sceneID="veh-qF-3Eu">
             <objects>
                 <viewController id="JzW-q3-crV" sceneMemberID="viewController">
@@ -108,7 +108,7 @@
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="Hmn-K6-0vq"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add" image="iconAdd" selectedImage="iconAddSelected" id="4SB-gB-Tt3"/>
+                    <tabBarItem key="tabBarItem" title="Video" image="iconVideo" selectedImage="iconVideoSelected" id="4SB-gB-Tt3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j1N-85-z0Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,14 +132,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="iconAdd" width="25" height="25"/>
-        <image name="iconAddSelected" width="25" height="25"/>
-        <image name="iconHome" width="25" height="25"/>
-        <image name="iconHomeSelected" width="25" height="26"/>
-        <image name="iconKickstand" width="25" height="25"/>
-        <image name="iconKickstandSelected" width="25" height="25"/>
-        <image name="iconProfile" width="25" height="25"/>
-        <image name="iconProfileSelected" width="25" height="25"/>
-        <image name="iconSettings" width="25" height="25"/>
+        <image name="iconChat" width="22" height="22"/>
+        <image name="iconChatSelected" width="22" height="22"/>
+        <image name="iconFavorite" width="22" height="22"/>
+        <image name="iconFavoriteSelected" width="22" height="22"/>
+        <image name="iconHome" width="22" height="22"/>
+        <image name="iconHomeSelected" width="22" height="22"/>
+        <image name="iconProfile" width="22" height="22"/>
+        <image name="iconProfileSelected" width="22" height="22"/>
+        <image name="iconVideo" width="22" height="22"/>
+        <image name="iconVideoSelected" width="22" height="22"/>
     </resources>
 </document>

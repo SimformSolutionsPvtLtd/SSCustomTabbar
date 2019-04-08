@@ -212,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = Y98X8JAPH6;
 						LastSwiftMigration = 1010;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = Y98X8JAPH6;
 						LastSwiftMigration = 1010;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -477,6 +479,7 @@
 			baseConfigurationReference = 1D0189F656393508E5F3C13D /* Pods-SSCustomTabbar_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y98X8JAPH6;
 				INFOPLIST_FILE = SSCustomTabbar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -492,6 +495,7 @@
 			baseConfigurationReference = 0EC9C98801FA701033E68CA8 /* Pods-SSCustomTabbar_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y98X8JAPH6;
 				INFOPLIST_FILE = SSCustomTabbar/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -506,6 +510,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 61ACB4CCF67299FE1B56AEE5 /* Pods-SSCustomTabbar_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = Y98X8JAPH6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -527,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 80721E5B593C880EED0D1D74 /* Pods-SSCustomTabbar_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = Y98X8JAPH6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
