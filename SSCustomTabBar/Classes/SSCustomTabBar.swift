@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class SSCustomTabBar: UITabBar {
+open class SSCustomTabBar: UITabBar {
     
     
     /// Fill color of back wave layer
@@ -111,7 +111,7 @@ public class SSCustomTabBar: UITabBar {
     /// Draws the receiver’s image within the passed-in rectangle.
     ///
     /// - Parameter rect: rect of view
-    override public func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         super.draw(rect)
         self.setupTabBar()
     }
