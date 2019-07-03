@@ -43,6 +43,34 @@ class SSCustomTabBar: UITabBar {
         }
     }
     
+    /// Shadow Color
+    @IBInspectable var shadowColor: UIColor {
+        get {
+            return UIColor(cgColor: self.layer.shadowColor ?? UIColor.clear.cgColor)
+        }
+        set{
+            self.layer.shadowColor = newValue.cgColor
+        }
+    }
+    
+    /// Shadow Radius
+    @IBInspectable var shadowRadius: CGFloat {
+        get {
+            return layer.shadowRadius
+        }
+        set{
+            self.layer.shadowRadius = newValue
+        }
+    }
+    
+    @IBInspectable var shadowOffset: CGSize {
+        get {
+            return layer.shadowOffset
+        } set {
+            self.layer.shadowOffset = newValue
+        }
+    }
+    
     private var kLayerFillColor: CGColor = UIColor.blue.cgColor
     private var displayLink: CADisplayLink!
     private let tabBarShapeLayer = CAShapeLayer()
@@ -129,6 +157,12 @@ extension SSCustomTabBar {
         self.shadowImage = UIImage()
         self.clipsToBounds = false
         
+        /// Shadow
+        self.layer.shadowOffset = shadowOffset
+        self.layer.shadowRadius = shadowRadius
+        self.layer.shadowColor = shadowColor.cgColor
+        self.layer.shadowOpacity = 1.0
+
         self.addSubview(leftPoint4)
         self.addSubview(leftPoint3)
         self.addSubview(leftPoint2)
