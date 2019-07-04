@@ -1,0 +1,16 @@
+PODS:
+  - SSCustomTabbar (1.0)
+
+DEPENDENCIES:
+  - SSCustomTabbar (from `../`)
+
+EXTERNAL SOURCES:
+  SSCustomTabbar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SSCustomTabbar: c0e61b895a6346359fa44e7bd4c97357ca5f00ec
+
+PODFILE CHECKSUM: 36fa833f41a5b150393a5d97c0811623ae271004
+
+COCOAPODS: 1.6.1
