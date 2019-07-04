@@ -60,6 +60,7 @@ class SSCustomTabBarViewController: UITabBarController {
                 self.setObserver()
             }
         }
+        self.applicationDidBecomeActive()
     }
     
     

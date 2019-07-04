@@ -63,6 +63,7 @@ class SSCustomTabBar: UITabBar {
         }
     }
     
+    /// Shadow Offset
     @IBInspectable var shadowOffset: CGSize {
         get {
             return layer.shadowOffset
