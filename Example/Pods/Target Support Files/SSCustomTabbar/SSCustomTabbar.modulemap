@@ -1,0 +1,6 @@
+framework module SSCustomTabbar {
+  umbrella header "SSCustomTabbar-umbrella.h"
+
+  export *
+  module * { export * }
+}
