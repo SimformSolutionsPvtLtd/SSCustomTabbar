@@ -14,6 +14,15 @@ private let defaultIndexValue = -1
 
 public class SSCustomTabBarViewController: UITabBarController {
     
+    public override var selectedIndex: Int {
+        didSet {
+            guard let items = self.tabBar.items else { return }
+            if items.indices.contains(selectedIndex) {
+                let item = items[selectedIndex]
+                self.tabBar(tabBar, didSelect: item)
+            }
+        }
+    }
     
     /// Tabbar height
     @IBInspectable var barHeight: CGFloat {
@@ -68,22 +77,23 @@ public class SSCustomTabBarViewController: UITabBarController {
     func setObserver() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(applicationDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationDidBecomeActive), name: Notification.Name(rawValue: SSConstants.updateViewNotification), object: nil)
     }
     
     
     /// removeObserver
     func removeObserver() {
-        NotificationCenter.default.removeObserver(self,
-                                                  name:UIApplication.didBecomeActiveNotification, object: nil)
+        NotificationCenter.default.removeObserver(self)
     }
     
     
     /// call when application become active
     @objc func applicationDidBecomeActive() {
-        DispatchQueue.main.async {
-            let view = self.getUpView(index: self.selectedIndex)
+        DispatchQueue.main.async { [weak self] in
+            guard let uSelf = self else { return }
+            let view = uSelf.getUpView(index: uSelf.selectedIndex)
             if view.frame.origin.y > 0 {
-                view.frame.origin.y -= self.kUpAnimationPoint
+                view.frame.origin.y -= uSelf.kUpAnimationPoint
             }
         }
     }

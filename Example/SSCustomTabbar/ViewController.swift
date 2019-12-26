@@ -15,9 +15,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func onTappedPush(_ sender: UIButton) {
+        let newVC = UIViewController()
+        newVC.view.backgroundColor = .red
+        newVC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(newVC, animated: true)
     }
 
 }

@@ -145,6 +145,11 @@ public class SSCustomTabBar: UITabBar {
         self.setupTabBar()
     }
     
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        NotificationCenter.default.post(Notification(name: Notification.Name(rawValue: SSConstants.updateViewNotification)))
+    }
+    
 }
 
 
