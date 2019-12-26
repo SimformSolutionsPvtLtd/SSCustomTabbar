@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name                  = 'SSCustomTabbar'
-    s.version               = '2.0.1'
+    s.version               = '2.0.2'
     s.platform              = :ios
     s.swift_version         = '5.0'
     s.summary               = 'Simple Animated tabbar with native control.'
@@ -24,22 +24,15 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/simformsolutions/SSCustomTabbar'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Sumit Goswami' => 'sumit.g@simformsolutions.com' }
   s.source           = { :git => 'https://github.com/simformsolutions/SSCustomTabbar.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
 
-#s.source_files = 'SSCustomTabbar/Classes/*.swift'
 s.source       = { :git => "https://github.com/simformsolutions/SSCustomTabbar.git",:tag => s.version }
 s.source_files  = 'SSCustomTabbar/Classes/*.swift'
-  # s.resource_bundles = {
-  #   'SSCustomTabbar' => ['SSCustomTabbar/Assets/*.png']
-  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
