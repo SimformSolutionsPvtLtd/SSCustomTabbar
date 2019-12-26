@@ -11,7 +11,7 @@
 		584CB26B38BCDDF4598D9EB180704A5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
 		60F00ACF5A341DB26F00BF23043F7CF9 /* Pods-SSCustomTabbar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD572AA89A14B4A88E2EF67ECAB6051 /* Pods-SSCustomTabbar_Example-dummy.m */; };
 		63D357BC50EFE66ACD623EADD58138F2 /* UIView+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB3B1595472826972D32585D2AB6BE /* UIView+Extenstion.swift */; };
-		7309DEA623B4CCFE00179BB1 /* Declration&Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7309DEA423B4CC0500179BB1 /* Declration&Constants.swift */; };
+		7309DEC923B4D6B400179BB1 /* Declration&Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7309DEC723B4D6A500179BB1 /* Declration&Constants.swift */; };
 		7A26B915CBF4093D7AB0FC3B18C91963 /* SSCustomTabbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 970DA1019A0BE350590B88D85A5F292D /* SSCustomTabbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		822B45C652E91993B8282A044A57EF87 /* SSCustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C77BE5AB4A98CD6FC3CC8CE0BC0C12 /* SSCustomTabBar.swift */; };
 		8B32BEBAA9986011CF99CF7A120FF2D3 /* Pods-SSCustomTabbar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 439C96106A69ECD29AB89894B1B43113 /* Pods-SSCustomTabbar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -57,7 +57,7 @@
 		68C77BE5AB4A98CD6FC3CC8CE0BC0C12 /* SSCustomTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSCustomTabBar.swift; path = SSCustomTabBar/Classes/SSCustomTabBar.swift; sourceTree = "<group>"; };
 		6F9F9296D33BB3E4F4779BD24D352620 /* SSCustomTabBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSCustomTabBarViewController.swift; path = SSCustomTabBar/Classes/SSCustomTabBarViewController.swift; sourceTree = "<group>"; };
 		6FFDD9BC042D6AB511196A6D951A2CD2 /* SSCustomTabbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSCustomTabbar-prefix.pch"; sourceTree = "<group>"; };
-		7309DEA423B4CC0500179BB1 /* Declration&Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Declration&Constants.swift"; sourceTree = "<group>"; };
+		7309DEC723B4D6A500179BB1 /* Declration&Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Declration&Constants.swift"; path = "SSCustomTabBar/Classes/Declration&Constants.swift"; sourceTree = "<group>"; };
 		7BD11CA313B13E434C94C9C38F53A34C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8B7FB6A1FB20278B8BFBB33DA52A7D2A /* Pods-SSCustomTabbar_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSCustomTabbar_Tests-Info.plist"; sourceTree = "<group>"; };
 		8F48EA6F5282A8AAF26808610CFEB728 /* Pods-SSCustomTabbar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSCustomTabbar_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		1599D6C3CC5A96B92C0D386B6BA378B9 /* SSCustomTabbar */ = {
 			isa = PBXGroup;
 			children = (
-				7309DEA423B4CC0500179BB1 /* Declration&Constants.swift */,
+				7309DEC723B4D6A500179BB1 /* Declration&Constants.swift */,
 				68C77BE5AB4A98CD6FC3CC8CE0BC0C12 /* SSCustomTabBar.swift */,
 				6F9F9296D33BB3E4F4779BD24D352620 /* SSCustomTabBarViewController.swift */,
 				F2FB3B1595472826972D32585D2AB6BE /* UIView+Extenstion.swift */,
@@ -403,7 +403,7 @@
 				822B45C652E91993B8282A044A57EF87 /* SSCustomTabBar.swift in Sources */,
 				E8D14FDBFD8AEB7524611CF690C69F62 /* SSCustomTabBarViewController.swift in Sources */,
 				63D357BC50EFE66ACD623EADD58138F2 /* UIView+Extenstion.swift in Sources */,
-				7309DEA623B4CCFE00179BB1 /* Declration&Constants.swift in Sources */,
+				7309DEC923B4D6B400179BB1 /* Declration&Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
