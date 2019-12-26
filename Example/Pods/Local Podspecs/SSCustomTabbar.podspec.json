@@ -1,6 +1,6 @@
 {
   "name": "SSCustomTabbar",
-  "version": "2.0",
+  "version": "2.0.1",
   "platforms": {
     "ios": "11.0"
   },
@@ -17,7 +17,7 @@
   },
   "source": {
     "git": "https://github.com/simformsolutions/SSCustomTabbar.git",
-    "tag": "2.0"
+    "tag": "2.0.1"
   },
   "source_files": "SSCustomTabbar/Classes/*.swift",
   "frameworks": "UIKit",
