@@ -32,6 +32,7 @@ TODO: Add long description of the pod here.
 
 s.source       = { :git => "https://github.com/simformsolutions/SSCustomTabbar.git",:tag => s.version }
 s.source_files  = 'SSCustomTabbar/Classes/*.swift'
+s.resources = ['SSCustomTabbar/SwiftUI/*.storyboard']
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
