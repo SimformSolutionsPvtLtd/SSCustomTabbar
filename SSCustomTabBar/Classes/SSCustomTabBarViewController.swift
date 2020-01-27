@@ -14,6 +14,8 @@ private let defaultIndexValue = -1
 
 public class SSCustomTabBarViewController: UITabBarController {
     
+    // MARK: - Overrides
+    
     public override var selectedIndex: Int {
         didSet {
             guard let items = self.tabBar.items else { return }
@@ -21,6 +23,12 @@ public class SSCustomTabBarViewController: UITabBarController {
                 let item = items[selectedIndex]
                 self.tabBar(tabBar, didSelect: item)
             }
+        }
+    }
+    
+    public override var viewControllers: [UIViewController]? {
+        didSet {
+            setup()
         }
     }
     
@@ -52,7 +60,7 @@ public class SSCustomTabBarViewController: UITabBarController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.setObserver()
         // Do any additional setup after loading the view.
     }
     
@@ -62,11 +70,14 @@ public class SSCustomTabBarViewController: UITabBarController {
     /// - Parameter animated: variable for namiation
     override public func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        setup()
+    }
+    
+    func setup() {
+        guard let count = tabBar.items?.count, count > 0 else { return }
         if self.priviousSelectedIndex == defaultIndexValue {
             if let item = self.tabBar.selectedItem {
                 self.tabBar(self.tabBar, didSelect: item)
-                self.removeObserver()
-                self.setObserver()
             }
         }
         self.applicationDidBecomeActive()

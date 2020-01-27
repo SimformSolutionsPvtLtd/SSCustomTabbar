@@ -10,5 +10,7 @@ import Foundation
 struct SSConstants {
     
     static let updateViewNotification: String = "updateViewNotification"
+    static let swiftUISupportVC = "swiftUISupportVC"
+    static let swiftUISupportStoryboard = "SwiftUISupport"
     
 }
