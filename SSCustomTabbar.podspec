@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name                  = 'SSCustomTabbar'
-    s.version               = '2.0.4'
+    s.version               = '2.0.5'
     s.platform              = :ios
     s.swift_version         = '5.0'
     s.summary               = 'Simple Animated tabbar with native control.'
@@ -35,5 +35,5 @@ s.source_files  = 'SSCustomTabbar/Classes/*.swift'
 s.resources = ['SSCustomTabbar/SwiftUI/*.storyboard']
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit'
+  s.frameworks = ['UIKit', 'SwiftUI']
 end
