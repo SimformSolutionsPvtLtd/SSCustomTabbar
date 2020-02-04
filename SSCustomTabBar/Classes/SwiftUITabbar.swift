@@ -18,7 +18,6 @@ public class SSTabConfiguration {
     /// Up Animation point
     public var upAnimationPoint: CGFloat?
     
-    
     /// Layer fill color
     public var layerFillColor: UIColor
     
@@ -54,7 +53,6 @@ public class SSTabConfiguration {
     public init(barHeight: CGFloat? = nil, upAnimationPoint: CGFloat? = nil, layerFillColor: UIColor = .white, waveHeight: CGFloat = 17, selectedTabTintColor: UIColor = UIColor.orange, unselectedTabTintColor: UIColor = .black, shadowColor: UIColor = .black, shadowRadius: CGFloat = .zero, shadowOffset: CGSize = CGSize(width: 0, height: -1)) {
         self.barHeight = barHeight
         self.upAnimationPoint = upAnimationPoint
-        
         self.layerFillColor = layerFillColor
         self.waveHeight = waveHeight
         self.selectedTabTintColor = selectedTabTintColor
@@ -110,7 +108,6 @@ public struct SwiftUITabBarController: UIViewControllerRepresentable {
     /// Should hide tab bar
     @Binding private var isTabBarHidden: Bool
     
-    
     // MARK: - Private declration
     private let tabBarVC: SSCustomTabBarViewController
     private let tabBar: SSCustomTabBar
@@ -154,14 +151,12 @@ public struct SwiftUITabBarController: UIViewControllerRepresentable {
     }
     
     public func updateUIViewController(_ tabBarConroller: UITabBarController, context: Context) {
-        
         if let barHeight = configuration.barHeight {
             tabBarVC.barHeight = barHeight
         }
         if let upAnimationPoint = configuration.upAnimationPoint {
             tabBarVC.upAnimationPoint = upAnimationPoint
         }
-        
         tabBar.layerFillColor = configuration.layerFillColor
         tabBar.waveHeight = configuration.waveHeight
         tabBar.unselectedTabTintColor = configuration.unselectedTabTintColor
@@ -169,7 +164,6 @@ public struct SwiftUITabBarController: UIViewControllerRepresentable {
         tabBar.shadowRadius = configuration.shadowRadius
         tabBar.shadowOffset = configuration.shadowOffset
         tabBar.tintColor = configuration.selectedTabTintColor
-        
         tabBar.isHidden = isTabBarHidden
     }
     
