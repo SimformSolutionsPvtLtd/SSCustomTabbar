@@ -34,20 +34,20 @@ public class SSCustomTabBarViewController: UITabBarController {
     
     /// Tabbar height
     @IBInspectable var barHeight: CGFloat {
-        get{
+        get {
             return self.kBarHeight ?? self.tabBar.frame.height
         }
-        set{
+        set {
             self.kBarHeight = newValue
         }
     }
     
     /// icon up animation point
     @IBInspectable var upAnimationPoint: CGFloat {
-        get{
+        get {
             return self.kUpAnimationPoint
         }
-        set{
+        set {
             self.kUpAnimationPoint = newValue
         }
     }
@@ -58,10 +58,12 @@ public class SSCustomTabBarViewController: UITabBarController {
     
     private var priviousSelectedIndex: Int = defaultIndexValue
     
+    private let animationDuration = 0.9
+    private let animationSpring: CGFloat = 0.57
+    
     override public func viewDidLoad() {
         super.viewDidLoad()
         self.setObserver()
-        // Do any additional setup after loading the view.
     }
     
     
@@ -86,8 +88,7 @@ public class SSCustomTabBarViewController: UITabBarController {
     
     /// setObserver
     func setObserver() {
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(applicationDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(applicationDidBecomeActive), name: Notification.Name(rawValue: SSConstants.updateViewNotification), object: nil)
     }
     
@@ -117,6 +118,7 @@ public class SSCustomTabBarViewController: UITabBarController {
 
 // MARK: - set bar height
 extension SSCustomTabBarViewController {
+    
     override public func viewWillLayoutSubviews() {
         guard var height = kBarHeight else { return }
         height += self.view.safeAreaInsets.bottom
@@ -140,31 +142,32 @@ extension SSCustomTabBarViewController {
     ///   - item: The tab bar item that was selected.
     override public func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         
-        if let uSelf = self.tabBar as? SSCustomTabBar, let items = uSelf.items, let index = items.firstIndex(of: item), index != self.priviousSelectedIndex {
+        guard let uSelf = self.tabBar as? SSCustomTabBar, 
+            let items = uSelf.items, 
+            let index = items.firstIndex(of: item), 
+            index != self.priviousSelectedIndex else { return }
             
-            let width = UIScreen.main.bounds.width/CGFloat(items.count)
-            let changeValue = (width*CGFloat(index+1))-(width/2)
-            uSelf.animating = true
+        let width = UIScreen.main.bounds.width/CGFloat(items.count)
+        let changeValue = (width*CGFloat(index+1))-(width/2)
+        uSelf.animating = true
             
-            let orderedTabBarItemViews: [UIView] = {
-                let interactionViews = tabBar.subviews.filter({ $0 is UIControl })
-                return interactionViews.sorted(by: { $0.frame.minX < $1.frame.minX })
-            }()
+        let orderedTabBarItemViews: [UIView] = {
+            let interactionViews = tabBar.subviews.filter({ $0 is UIControl })
+            return interactionViews.sorted(by: { $0.frame.minX < $1.frame.minX })
+        }()
             
-            orderedTabBarItemViews.forEach({ (objectView) in
-                let objectIndex = orderedTabBarItemViews.firstIndex(of: objectView)
-                if index ==  objectIndex {
-                    print(index)
-                }else if  objectIndex == priviousSelectedIndex {
-                    UIView.animate(withDuration: 0.9, delay: 0.0, usingSpringWithDamping: 0.57, initialSpringVelocity: 0.0, options: .curveEaseInOut, animations: {
-                        objectView.frame = CGRect(x: objectView.frame.origin.x, y: objectView.frame.origin.y + self.kUpAnimationPoint, width: objectView.frame.width, height: objectView.frame.height)
-                    }, completion: nil)
-                }
-            })
-            self.priviousSelectedIndex = index
-            performSpringAnimation(for: orderedTabBarItemViews[index], changeValue: changeValue)
-        }
-        
+        orderedTabBarItemViews.forEach({ (objectView) in
+            let objectIndex = orderedTabBarItemViews.firstIndex(of: objectView)
+            if index == objectIndex {
+                print(index)
+            } else if objectIndex == priviousSelectedIndex {
+                UIView.animate(withDuration: animationDuration, delay: 0.0, usingSpringWithDamping: animationSpring, initialSpringVelocity: 0.0, options: .curveEaseInOut, animations: {
+                    objectView.frame = CGRect(x: objectView.frame.origin.x, y: objectView.frame.origin.y + self.kUpAnimationPoint, width: objectView.frame.width, height: objectView.frame.height)
+                }, completion: nil)
+            }
+        })
+        self.priviousSelectedIndex = index
+        performSpringAnimation(for: orderedTabBarItemViews[index], changeValue: changeValue)
     }
     
     
@@ -188,17 +191,18 @@ extension SSCustomTabBarViewController {
     ///   - changeValue: center location for wave.
     func performSpringAnimation(for view: UIView, changeValue: CGFloat) {
         
-        if let uSelf = self.tabBar as? SSCustomTabBar {
-            UIView.animate(withDuration: 0.9, delay: 0.0, usingSpringWithDamping: 0.57, initialSpringVelocity: 0.0, options: [], animations: { () -> Void in
-                uSelf.setDefaultlayoutControlPoints(waveHeight: uSelf.minimalHeight, locationX: changeValue)
+        guard let uSelf = self.tabBar as? SSCustomTabBar else { return }
+            
+        UIView.animate(withDuration:animationDuration, delay: 0.0, usingSpringWithDamping: animationSpring, initialSpringVelocity: 0.0, options: [], animations: { () -> Void in
+            uSelf.setDefaultlayoutControlPoints(waveHeight: uSelf.minimalHeight, locationX: changeValue)
                 
-            }, completion: { _ in
-                uSelf.animating = false
-            })
-            UIView.animate(withDuration: 0.9, delay: 0.0, usingSpringWithDamping: 0.57, initialSpringVelocity: 0.0, options: .curveEaseInOut, animations: {
-                view.frame = CGRect(x: view.frame.origin.x, y: view.frame.origin.y - self.kUpAnimationPoint, width: view.frame.width, height: view.frame.height)
-            }, completion: nil)
-        }
+        }, completion: { _ in
+            uSelf.animating = false
+        })
+        
+        UIView.animate(withDuration: animationDuration, delay: 0.0, usingSpringWithDamping: animationSpring, initialSpringVelocity: 0.0, options: .curveEaseInOut, animations: {
+            view.frame = CGRect(x: view.frame.origin.x, y: view.frame.origin.y - self.kUpAnimationPoint, width: view.frame.width, height: view.frame.height)
+        }, completion: nil)
     }
     
 }
