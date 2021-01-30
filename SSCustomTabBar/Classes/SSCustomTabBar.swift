@@ -16,7 +16,7 @@ public class SSCustomTabBar: UITabBar {
         get {
             return UIColor(cgColor: kLayerFillColor)
         }
-        set{
+        set {
             kLayerFillColor = newValue.cgColor
         }
     }
@@ -24,10 +24,10 @@ public class SSCustomTabBar: UITabBar {
     
     /// Wave Height
     @IBInspectable var waveHeight: CGFloat {
-        get{
+        get {
             return self.minimalHeight
         }
-        set{
+        set {
             self.minimalHeight = newValue
         }
     }
@@ -38,7 +38,7 @@ public class SSCustomTabBar: UITabBar {
         get {
             return self.unselectedItemTintColor ?? .black
         }
-        set{
+        set {
             self.unselectedItemTintColor = newValue
         }
     }
@@ -48,7 +48,7 @@ public class SSCustomTabBar: UITabBar {
         get {
             return UIColor(cgColor: self.layer.shadowColor ?? UIColor.clear.cgColor)
         }
-        set{
+        set {
             self.layer.shadowColor = newValue.cgColor
         }
     }
@@ -58,7 +58,7 @@ public class SSCustomTabBar: UITabBar {
         get {
             return layer.shadowRadius
         }
-        set{
+        set {
             self.layer.shadowRadius = newValue
         }
     }
@@ -157,6 +157,7 @@ public class SSCustomTabBar: UITabBar {
 extension SSCustomTabBar {
     
     func setupTabBar() {
+        
         self.isTranslucent = true
         self.backgroundColor = UIColor.clear
         self.backgroundImage = UIImage()
@@ -211,7 +212,6 @@ extension SSCustomTabBar {
         let imaganaeryFram = CGRect(x: locationX-(width/2), y: minimalY, width: width, height: minimalHeight)
         
         leftPoint3.center = CGPoint(x: imaganaeryFram.minX, y: imaganaeryFram.maxY)
-        
         
         let topOffset: CGFloat = imaganaeryFram.width / 4.3
         let bottomOffset: CGFloat = imaganaeryFram.width / 4.5
