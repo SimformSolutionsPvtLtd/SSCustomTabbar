@@ -7,31 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3FD97CC6DD512F2A775041ADB95B31B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		584CB26B38BCDDF4598D9EB180704A5A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
-		60F00ACF5A341DB26F00BF23043F7CF9 /* Pods-SSCustomTabbar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD572AA89A14B4A88E2EF67ECAB6051 /* Pods-SSCustomTabbar_Example-dummy.m */; };
-		63D357BC50EFE66ACD623EADD58138F2 /* UIView+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB3B1595472826972D32585D2AB6BE /* UIView+Extenstion.swift */; };
-		7309DEC923B4D6B400179BB1 /* Declration&Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7309DEC723B4D6A500179BB1 /* Declration&Constants.swift */; };
-		7A26B915CBF4093D7AB0FC3B18C91963 /* SSCustomTabbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 970DA1019A0BE350590B88D85A5F292D /* SSCustomTabbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		822B45C652E91993B8282A044A57EF87 /* SSCustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C77BE5AB4A98CD6FC3CC8CE0BC0C12 /* SSCustomTabBar.swift */; };
-		8B32BEBAA9986011CF99CF7A120FF2D3 /* Pods-SSCustomTabbar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 439C96106A69ECD29AB89894B1B43113 /* Pods-SSCustomTabbar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8B6195B43F14646580DD007FEB39B9C2 /* Pods-SSCustomTabbar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99331EA7304B9C656E1EFCD6D7907A69 /* Pods-SSCustomTabbar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDCEF463D2DD0BCFE667523E6404238A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		E8D14FDBFD8AEB7524611CF690C69F62 /* SSCustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9F9296D33BB3E4F4779BD24D352620 /* SSCustomTabBarViewController.swift */; };
-		F586E30617880208004373363F297E72 /* Pods-SSCustomTabbar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD9402A44AFFA17DEC2AB27EAE84FD3 /* Pods-SSCustomTabbar_Tests-dummy.m */; };
-		FB16F272CD01B1C2C89162410E741C64 /* SSCustomTabbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE73F952D55791E924ACC5ECD8AB5FE /* SSCustomTabbar-dummy.m */; };
-		FC5D0246A9F4FAA0E764AFFAD2319B0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		1D27B4C6C65DDF1F70C0476464D46AEC /* Pods-SSCustomTabbar_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD572AA89A14B4A88E2EF67ECAB6051 /* Pods-SSCustomTabbar_Example-dummy.m */; };
+		238023AD96FC1164660AA15706A45D2B /* SSCustomTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD046F2491F4D7E1A9AFAC8126B431F /* SSCustomTabBarViewController.swift */; };
+		3573DC2BFAC237A171B6731DA9ADDFD0 /* SSCustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A469D91277891A38E21BF98DA4F2800 /* SSCustomTabBar.swift */; };
+		3A745A5D8B9A336D212DB469E860F3D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6E43695CA18D2ECCB99629180AF405 /* Foundation.framework */; };
+		4BE187ED599EC879F41D3F8C6DACC29B /* SSCustomTabbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 648F3C35876D3A63CFDFFF901BE4684F /* SSCustomTabbar-dummy.m */; };
+		624342D37407F7B5A62DC436E8A9C638 /* SwiftUISupport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FF9DE7B4268E6D8E3A3102178D66D9 /* SwiftUISupport.storyboard */; };
+		682160DD72B33D1FC1F5097D17718098 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6E43695CA18D2ECCB99629180AF405 /* Foundation.framework */; };
+		76EE449242D3EE2D6992F59CA1C5BB00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6E43695CA18D2ECCB99629180AF405 /* Foundation.framework */; };
+		7B4B39A35B3C258EDEEF840BBB1417DF /* Declaration&Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AF44FE1DE729480F297C4E3662132D /* Declaration&Constants.swift */; };
+		7BABACEF86472330783BD2820FE93EE1 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC0E36001E64A26C7642A7F2A40EC757 /* SwiftUI.framework */; };
+		836DBF9E1C9D165CC188212BDA214010 /* UIView+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3870847828CAE2C84C86D72FBD068DB8 /* UIView+Extenstion.swift */; };
+		9F7BD02C1B73DAEB778395769BD178C4 /* Pods-SSCustomTabbar_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 439C96106A69ECD29AB89894B1B43113 /* Pods-SSCustomTabbar_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B35F5ABCFBC06A63D37F06B05B1A7775 /* Pods-SSCustomTabbar_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99331EA7304B9C656E1EFCD6D7907A69 /* Pods-SSCustomTabbar_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B53DBAA67A57B569734011639100C4C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9D6B54EB35BA403010B12AB1B9AEED /* UIKit.framework */; };
+		F6253A550D8F253C187B6A16FD6852A9 /* Pods-SSCustomTabbar_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD9402A44AFFA17DEC2AB27EAE84FD3 /* Pods-SSCustomTabbar_Tests-dummy.m */; };
+		F856A6CF1CE82190A5843EF8768C288D /* SwiftUITabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF07E91DA672ABA0E33F080A5FDB9DA /* SwiftUITabbar.swift */; };
+		FB2AC3A72979786D30C99558C8FBACB3 /* SSCustomTabbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36D3C902F1793B355C5C6D7D9F8BBFDF /* SSCustomTabbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		547B56B62E9650AEC4140C9DA9688A33 /* PBXContainerItemProxy */ = {
+		01D674B402CCE9D0B0138C262FA801CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1FC14E4C0317FF7E3E52883B2B83DA13;
 			remoteInfo = SSCustomTabbar;
 		};
-		8A9EA986A2A373368A85F6C55D070A32 /* PBXContainerItemProxy */ = {
+		5AD9F71439012739860D713FF1F935A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -41,101 +44,99 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07D860E0F65AA5A6C53AFEE9F1867521 /* SSCustomTabbar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SSCustomTabbar-Info.plist"; sourceTree = "<group>"; };
 		0BD572AA89A14B4A88E2EF67ECAB6051 /* Pods-SSCustomTabbar_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSCustomTabbar_Example-dummy.m"; sourceTree = "<group>"; };
 		0D83EEC035F31F1AE157D54B46BD7AEE /* Pods-SSCustomTabbar_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSCustomTabbar_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		21A8D3CAFB7634777EADBF3C3E2D650A /* SSCustomTabbar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSCustomTabbar.xcconfig; sourceTree = "<group>"; };
-		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		1F6E43695CA18D2ECCB99629180AF405 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		248195293535A407A3D93389B0261E48 /* SSCustomTabbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSCustomTabbar-prefix.pch"; sourceTree = "<group>"; };
 		337DF2C5D8030191338A92715EA72B49 /* Pods-SSCustomTabbar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSCustomTabbar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		355D7233C00CE749F6608703F21455C9 /* Pods-SSCustomTabbar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSCustomTabbar_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		36D3C902F1793B355C5C6D7D9F8BBFDF /* SSCustomTabbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSCustomTabbar-umbrella.h"; sourceTree = "<group>"; };
+		3870847828CAE2C84C86D72FBD068DB8 /* UIView+Extenstion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extenstion.swift"; path = "SSCustomTabBar/Classes/UIView+Extenstion.swift"; sourceTree = "<group>"; };
 		402AF2D24E64536FFD4D2780EC2EA3B5 /* Pods-SSCustomTabbar_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSCustomTabbar_Example-Info.plist"; sourceTree = "<group>"; };
-		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		439C96106A69ECD29AB89894B1B43113 /* Pods-SSCustomTabbar_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSCustomTabbar_Example-umbrella.h"; sourceTree = "<group>"; };
-		4D0164A2DDE6BC5598D4188BAE03A992 /* SSCustomTabbar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SSCustomTabbar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		616446A69B3FDF0D544AA9E96F211BB5 /* Pods_SSCustomTabbar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSCustomTabbar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C3956743A76CBAA88F14A58B86EA28 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		452A6B07F91403C1335367C241A172C0 /* SSCustomTabbar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SSCustomTabbar-Info.plist"; sourceTree = "<group>"; };
+		4BD046F2491F4D7E1A9AFAC8126B431F /* SSCustomTabBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSCustomTabBarViewController.swift; path = SSCustomTabBar/Classes/SSCustomTabBarViewController.swift; sourceTree = "<group>"; };
+		616446A69B3FDF0D544AA9E96F211BB5 /* Pods_SSCustomTabbar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SSCustomTabbar_Example.framework; path = "Pods-SSCustomTabbar_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		623EB96B342C85EA3C93AFE1DA34C8FB /* Pods-SSCustomTabbar_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SSCustomTabbar_Example.modulemap"; sourceTree = "<group>"; };
-		68C77BE5AB4A98CD6FC3CC8CE0BC0C12 /* SSCustomTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSCustomTabBar.swift; path = SSCustomTabBar/Classes/SSCustomTabBar.swift; sourceTree = "<group>"; };
-		6F9F9296D33BB3E4F4779BD24D352620 /* SSCustomTabBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSCustomTabBarViewController.swift; path = SSCustomTabBar/Classes/SSCustomTabBarViewController.swift; sourceTree = "<group>"; };
-		6FFDD9BC042D6AB511196A6D951A2CD2 /* SSCustomTabbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSCustomTabbar-prefix.pch"; sourceTree = "<group>"; };
-		7309DEC723B4D6A500179BB1 /* Declration&Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Declration&Constants.swift"; path = "SSCustomTabBar/Classes/Declration&Constants.swift"; sourceTree = "<group>"; };
-		7BD11CA313B13E434C94C9C38F53A34C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		648F3C35876D3A63CFDFFF901BE4684F /* SSCustomTabbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSCustomTabbar-dummy.m"; sourceTree = "<group>"; };
+		651BE09A7632A99EE7D0FAE45539268D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7751D8C4DF4E6B80EA3098292E10DC17 /* SSCustomTabbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSCustomTabbar.modulemap; sourceTree = "<group>"; };
+		7A469D91277891A38E21BF98DA4F2800 /* SSCustomTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSCustomTabBar.swift; path = SSCustomTabBar/Classes/SSCustomTabBar.swift; sourceTree = "<group>"; };
 		8B7FB6A1FB20278B8BFBB33DA52A7D2A /* Pods-SSCustomTabbar_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSCustomTabbar_Tests-Info.plist"; sourceTree = "<group>"; };
 		8F48EA6F5282A8AAF26808610CFEB728 /* Pods-SSCustomTabbar_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSCustomTabbar_Example-frameworks.sh"; sourceTree = "<group>"; };
-		970DA1019A0BE350590B88D85A5F292D /* SSCustomTabbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSCustomTabbar-umbrella.h"; sourceTree = "<group>"; };
 		99331EA7304B9C656E1EFCD6D7907A69 /* Pods-SSCustomTabbar_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSCustomTabbar_Tests-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DE73F952D55791E924ACC5ECD8AB5FE /* SSCustomTabbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSCustomTabbar-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F8D79D5C1CC183B19BF780FC8FB174B /* SSCustomTabbar.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SSCustomTabbar.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AF5D39AF5CC89874601B31847FF5FE38 /* Pods-SSCustomTabbar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSCustomTabbar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		AF780B59199CB7438C6D25D9004FE5BB /* SSCustomTabbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSCustomTabbar.modulemap; sourceTree = "<group>"; };
 		B232FF61468F97F937CF720DF50DB934 /* Pods-SSCustomTabbar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSCustomTabbar_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B5AF44FE1DE729480F297C4E3662132D /* Declaration&Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Declaration&Constants.swift"; path = "SSCustomTabBar/Classes/Declaration&Constants.swift"; sourceTree = "<group>"; };
 		B93385B9E28534B3DB5E36B54221B1DB /* Pods-SSCustomTabbar_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSCustomTabbar_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		BBD9402A44AFFA17DEC2AB27EAE84FD3 /* Pods-SSCustomTabbar_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSCustomTabbar_Tests-dummy.m"; sourceTree = "<group>"; };
-		CCD3D61FFB9FA21D87EE945CDCB89030 /* SSCustomTabbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSCustomTabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC10D502D3B925A2FAC7837CFEB7AC01 /* SSCustomTabbar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSCustomTabbar.debug.xcconfig; sourceTree = "<group>"; };
+		BC374BD14C4F30A51D6FE79D8B779E97 /* SSCustomTabbar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSCustomTabbar.release.xcconfig; sourceTree = "<group>"; };
+		CC0E36001E64A26C7642A7F2A40EC757 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
+		CCD3D61FFB9FA21D87EE945CDCB89030 /* SSCustomTabbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SSCustomTabbar.framework; path = SSCustomTabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6FF9DE7B4268E6D8E3A3102178D66D9 /* SwiftUISupport.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = SwiftUISupport.storyboard; path = SSCustomTabBar/SwiftUI/SwiftUISupport.storyboard; sourceTree = "<group>"; };
 		DA948826AE63D419471C113BC71F1508 /* Pods-SSCustomTabbar_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SSCustomTabbar_Tests.modulemap"; sourceTree = "<group>"; };
-		E0639AF39517095E5AECF3D521B45209 /* Pods_SSCustomTabbar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSCustomTabbar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2FB3B1595472826972D32585D2AB6BE /* UIView+Extenstion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extenstion.swift"; path = "SSCustomTabBar/Classes/UIView+Extenstion.swift"; sourceTree = "<group>"; };
+		DA9D6B54EB35BA403010B12AB1B9AEED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E0639AF39517095E5AECF3D521B45209 /* Pods_SSCustomTabbar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SSCustomTabbar_Tests.framework; path = "Pods-SSCustomTabbar_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFF07E91DA672ABA0E33F080A5FDB9DA /* SwiftUITabbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftUITabbar.swift; path = SSCustomTabBar/Classes/SwiftUITabbar.swift; sourceTree = "<group>"; };
 		F66950CE8786E09F200A6CEC880DC996 /* Pods-SSCustomTabbar_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSCustomTabbar_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F805CD753440B6DA7D64E2363CFC9044 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F9EEEF360374FDFE85F9D1C62069DA39 /* Pods-SSCustomTabbar_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSCustomTabbar_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		494AB5B494A15CCDA410C762B2ED5E9A /* Frameworks */ = {
+		5B7D013D9AD66DAB9E751D56AAA3611F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FD97CC6DD512F2A775041ADB95B31B2 /* Foundation.framework in Frameworks */,
-				584CB26B38BCDDF4598D9EB180704A5A /* UIKit.framework in Frameworks */,
+				3A745A5D8B9A336D212DB469E860F3D0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A445118D8670453A36A1EFEFE5DC504 /* Frameworks */ = {
+		7CED8C695148DF843FBF99ADDD65133F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDCEF463D2DD0BCFE667523E6404238A /* Foundation.framework in Frameworks */,
+				682160DD72B33D1FC1F5097D17718098 /* Foundation.framework in Frameworks */,
+				7BABACEF86472330783BD2820FE93EE1 /* SwiftUI.framework in Frameworks */,
+				B53DBAA67A57B569734011639100C4C9 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A087D66DE238182399B002BBA6EBE7A6 /* Frameworks */ = {
+		8EF04994E7F1ADCA662029D80FAD35B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC5D0246A9F4FAA0E764AFFAD2319B0E /* Foundation.framework in Frameworks */,
+				76EE449242D3EE2D6992F59CA1C5BB00 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1599D6C3CC5A96B92C0D386B6BA378B9 /* SSCustomTabbar */ = {
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7309DEC723B4D6A500179BB1 /* Declration&Constants.swift */,
-				68C77BE5AB4A98CD6FC3CC8CE0BC0C12 /* SSCustomTabBar.swift */,
-				6F9F9296D33BB3E4F4779BD24D352620 /* SSCustomTabBarViewController.swift */,
-				F2FB3B1595472826972D32585D2AB6BE /* UIView+Extenstion.swift */,
-				D4C7B9D0D58BA5195EFE740D1F3ED117 /* Pod */,
-				509B4A2E661444D647F0D0E1254B39AD /* Support Files */,
-			);
-			name = SSCustomTabbar;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+				F5526776CFB064E883CCCEF07083471F /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2ED342E202A4C74AC492990C88C31E5B /* Development Pods */ = {
+		205D0E3B4D02F385C0B000745D2AD88F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1599D6C3CC5A96B92C0D386B6BA378B9 /* SSCustomTabbar */,
+				7751D8C4DF4E6B80EA3098292E10DC17 /* SSCustomTabbar.modulemap */,
+				648F3C35876D3A63CFDFFF901BE4684F /* SSCustomTabbar-dummy.m */,
+				452A6B07F91403C1335367C241A172C0 /* SSCustomTabbar-Info.plist */,
+				248195293535A407A3D93389B0261E48 /* SSCustomTabbar-prefix.pch */,
+				36D3C902F1793B355C5C6D7D9F8BBFDF /* SSCustomTabbar-umbrella.h */,
+				BC10D502D3B925A2FAC7837CFEB7AC01 /* SSCustomTabbar.debug.xcconfig */,
+				BC374BD14C4F30A51D6FE79D8B779E97 /* SSCustomTabbar.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SSCustomTabbar";
 			sourceTree = "<group>";
 		};
 		3C3C2971825F4B1D55791DC80943D1BD /* Pods-SSCustomTabbar_Example */ = {
@@ -155,18 +156,28 @@
 			path = "Target Support Files/Pods-SSCustomTabbar_Example";
 			sourceTree = "<group>";
 		};
-		509B4A2E661444D647F0D0E1254B39AD /* Support Files */ = {
+		4772FB35A5B01EB05624C73D6B1E9869 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AF780B59199CB7438C6D25D9004FE5BB /* SSCustomTabbar.modulemap */,
-				21A8D3CAFB7634777EADBF3C3E2D650A /* SSCustomTabbar.xcconfig */,
-				9DE73F952D55791E924ACC5ECD8AB5FE /* SSCustomTabbar-dummy.m */,
-				07D860E0F65AA5A6C53AFEE9F1867521 /* SSCustomTabbar-Info.plist */,
-				6FFDD9BC042D6AB511196A6D951A2CD2 /* SSCustomTabbar-prefix.pch */,
-				970DA1019A0BE350590B88D85A5F292D /* SSCustomTabbar-umbrella.h */,
+				50F9B51D24F7E067FEE35A7AB04CF8AC /* SSCustomTabbar */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SSCustomTabbar";
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		50F9B51D24F7E067FEE35A7AB04CF8AC /* SSCustomTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				B5AF44FE1DE729480F297C4E3662132D /* Declaration&Constants.swift */,
+				7A469D91277891A38E21BF98DA4F2800 /* SSCustomTabBar.swift */,
+				4BD046F2491F4D7E1A9AFAC8126B431F /* SSCustomTabBarViewController.swift */,
+				D6FF9DE7B4268E6D8E3A3102178D66D9 /* SwiftUISupport.storyboard */,
+				EFF07E91DA672ABA0E33F080A5FDB9DA /* SwiftUITabbar.swift */,
+				3870847828CAE2C84C86D72FBD068DB8 /* UIView+Extenstion.swift */,
+				FC9C2F3CDB1B53A0AC760EAE03DE2ED0 /* Pod */,
+				205D0E3B4D02F385C0B000745D2AD88F /* Support Files */,
+			);
+			name = SSCustomTabbar;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		628787B570DEF9F4058A404E00932EFE /* Targets Support Files */ = {
@@ -208,56 +219,57 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				2ED342E202A4C74AC492990C88C31E5B /* Development Pods */,
-				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				4772FB35A5B01EB05624C73D6B1E9869 /* Development Pods */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
 				65F0C889325CB2E3D48CE8529D6EFBC3 /* Products */,
 				628787B570DEF9F4058A404E00932EFE /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D4C7B9D0D58BA5195EFE740D1F3ED117 /* Pod */ = {
+		F5526776CFB064E883CCCEF07083471F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7BD11CA313B13E434C94C9C38F53A34C /* LICENSE */,
-				F805CD753440B6DA7D64E2363CFC9044 /* README.md */,
-				4D0164A2DDE6BC5598D4188BAE03A992 /* SSCustomTabbar.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
-				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+				1F6E43695CA18D2ECCB99629180AF405 /* Foundation.framework */,
+				CC0E36001E64A26C7642A7F2A40EC757 /* SwiftUI.framework */,
+				DA9D6B54EB35BA403010B12AB1B9AEED /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		FC9C2F3CDB1B53A0AC760EAE03DE2ED0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				651BE09A7632A99EE7D0FAE45539268D /* LICENSE */,
+				43C3956743A76CBAA88F14A58B86EA28 /* README.md */,
+				9F8D79D5C1CC183B19BF780FC8FB174B /* SSCustomTabbar.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		22A8B0F1495405CDF5237BC90821BC90 /* Headers */ = {
+		62E903446448C7DD52C180D668BA26EE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B32BEBAA9986011CF99CF7A120FF2D3 /* Pods-SSCustomTabbar_Example-umbrella.h in Headers */,
+				B35F5ABCFBC06A63D37F06B05B1A7775 /* Pods-SSCustomTabbar_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65A55B7EA205E0D9C2C578F08CCD1B0E /* Headers */ = {
+		6C44AB3418A83B5463B73EB4E7A1E6DC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B6195B43F14646580DD007FEB39B9C2 /* Pods-SSCustomTabbar_Tests-umbrella.h in Headers */,
+				FB2AC3A72979786D30C99558C8FBACB3 /* SSCustomTabbar-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFCBF99ABBB78C30539D3651A7DD0942 /* Headers */ = {
+		E4101D50DEC74F05413D61706A99291D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A26B915CBF4093D7AB0FC3B18C91963 /* SSCustomTabbar-umbrella.h in Headers */,
+				9F7BD02C1B73DAEB778395769BD178C4 /* Pods-SSCustomTabbar_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,12 +278,12 @@
 /* Begin PBXNativeTarget section */
 		1FC14E4C0317FF7E3E52883B2B83DA13 /* SSCustomTabbar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6EF328E8520938B439A6360B9D6AF236 /* Build configuration list for PBXNativeTarget "SSCustomTabbar" */;
+			buildConfigurationList = 1F8CF25B335317B2C6CA25594802F47B /* Build configuration list for PBXNativeTarget "SSCustomTabbar" */;
 			buildPhases = (
-				EFCBF99ABBB78C30539D3651A7DD0942 /* Headers */,
-				6BC46CDF3399E21CA91A8BDB6EBF2954 /* Sources */,
-				494AB5B494A15CCDA410C762B2ED5E9A /* Frameworks */,
-				2F58C7FDC303444A6302A7EC6A6CBC22 /* Resources */,
+				6C44AB3418A83B5463B73EB4E7A1E6DC /* Headers */,
+				8857F3C970BB2FEA13657929D0272FE6 /* Sources */,
+				7CED8C695148DF843FBF99ADDD65133F /* Frameworks */,
+				4F925FBC7682AB1C3592F763E6CFB250 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -284,17 +296,17 @@
 		};
 		2AE98A408AC69819C1D58B9B7D817774 /* Pods-SSCustomTabbar_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F8FAFCC6C0D8ED61EE58A651FC335CE /* Build configuration list for PBXNativeTarget "Pods-SSCustomTabbar_Tests" */;
+			buildConfigurationList = 2A33BB78C33EEFB999F4995E3881D387 /* Build configuration list for PBXNativeTarget "Pods-SSCustomTabbar_Tests" */;
 			buildPhases = (
-				65A55B7EA205E0D9C2C578F08CCD1B0E /* Headers */,
-				5A5EAD70AF792F5EDC8C3AA1721CF2B9 /* Sources */,
-				A087D66DE238182399B002BBA6EBE7A6 /* Frameworks */,
-				CEA093D563432C082F6C351BB017A610 /* Resources */,
+				62E903446448C7DD52C180D668BA26EE /* Headers */,
+				ECD924827A73D9425B17F2DB9AA82A04 /* Sources */,
+				5B7D013D9AD66DAB9E751D56AAA3611F /* Frameworks */,
+				A9FD141801F45570C9C030E43FA83B87 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				62017334F8058B1C3DF68EA4560AE9E8 /* PBXTargetDependency */,
+				B9D7FCC3DB79749BB9B426AADE427014 /* PBXTargetDependency */,
 			);
 			name = "Pods-SSCustomTabbar_Tests";
 			productName = "Pods-SSCustomTabbar_Tests";
@@ -303,17 +315,17 @@
 		};
 		A60B3B74BBB1D4420DD757F90CF7CCCC /* Pods-SSCustomTabbar_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D81E9BC46628BD18389DE8D852E3D0B /* Build configuration list for PBXNativeTarget "Pods-SSCustomTabbar_Example" */;
+			buildConfigurationList = 6A88E30F919E91DC1854E4CE47A5ABE7 /* Build configuration list for PBXNativeTarget "Pods-SSCustomTabbar_Example" */;
 			buildPhases = (
-				22A8B0F1495405CDF5237BC90821BC90 /* Headers */,
-				24B2EB6FFF94926F3D2F226D03AD403B /* Sources */,
-				8A445118D8670453A36A1EFEFE5DC504 /* Frameworks */,
-				C85CEF18C175A12666D7DED561FAF158 /* Resources */,
+				E4101D50DEC74F05413D61706A99291D /* Headers */,
+				31A260108DD6D266B7DC07D21DEE53C3 /* Sources */,
+				8EF04994E7F1ADCA662029D80FAD35B3 /* Frameworks */,
+				D2C9AED1633356BE393E0C955567D34A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				FD9DB2210649CABB1C99F1F4C08FC7D0 /* PBXTargetDependency */,
+				11C119E4AE514EB1CD7B11F40BE4D070 /* PBXTargetDependency */,
 			);
 			name = "Pods-SSCustomTabbar_Example";
 			productName = "Pods-SSCustomTabbar_Example";
@@ -327,12 +339,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1130;
-				TargetAttributes = {
-					A60B3B74BBB1D4420DD757F90CF7CCCC = {
-						LastSwiftMigration = 1130;
-					};
-				};
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -355,21 +362,22 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2F58C7FDC303444A6302A7EC6A6CBC22 /* Resources */ = {
+		4F925FBC7682AB1C3592F763E6CFB250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624342D37407F7B5A62DC436E8A9C638 /* SwiftUISupport.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FD141801F45570C9C030E43FA83B87 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C85CEF18C175A12666D7DED561FAF158 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CEA093D563432C082F6C351BB017A610 /* Resources */ = {
+		D2C9AED1633356BE393E0C955567D34A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,56 +387,192 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		24B2EB6FFF94926F3D2F226D03AD403B /* Sources */ = {
+		31A260108DD6D266B7DC07D21DEE53C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60F00ACF5A341DB26F00BF23043F7CF9 /* Pods-SSCustomTabbar_Example-dummy.m in Sources */,
+				1D27B4C6C65DDF1F70C0476464D46AEC /* Pods-SSCustomTabbar_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A5EAD70AF792F5EDC8C3AA1721CF2B9 /* Sources */ = {
+		8857F3C970BB2FEA13657929D0272FE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F586E30617880208004373363F297E72 /* Pods-SSCustomTabbar_Tests-dummy.m in Sources */,
+				7B4B39A35B3C258EDEEF840BBB1417DF /* Declaration&Constants.swift in Sources */,
+				4BE187ED599EC879F41D3F8C6DACC29B /* SSCustomTabbar-dummy.m in Sources */,
+				3573DC2BFAC237A171B6731DA9ADDFD0 /* SSCustomTabBar.swift in Sources */,
+				238023AD96FC1164660AA15706A45D2B /* SSCustomTabBarViewController.swift in Sources */,
+				F856A6CF1CE82190A5843EF8768C288D /* SwiftUITabbar.swift in Sources */,
+				836DBF9E1C9D165CC188212BDA214010 /* UIView+Extenstion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6BC46CDF3399E21CA91A8BDB6EBF2954 /* Sources */ = {
+		ECD924827A73D9425B17F2DB9AA82A04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB16F272CD01B1C2C89162410E741C64 /* SSCustomTabbar-dummy.m in Sources */,
-				822B45C652E91993B8282A044A57EF87 /* SSCustomTabBar.swift in Sources */,
-				E8D14FDBFD8AEB7524611CF690C69F62 /* SSCustomTabBarViewController.swift in Sources */,
-				63D357BC50EFE66ACD623EADD58138F2 /* UIView+Extenstion.swift in Sources */,
-				7309DEC923B4D6B400179BB1 /* Declration&Constants.swift in Sources */,
+				F6253A550D8F253C187B6A16FD6852A9 /* Pods-SSCustomTabbar_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		62017334F8058B1C3DF68EA4560AE9E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-SSCustomTabbar_Example";
-			target = A60B3B74BBB1D4420DD757F90CF7CCCC /* Pods-SSCustomTabbar_Example */;
-			targetProxy = 8A9EA986A2A373368A85F6C55D070A32 /* PBXContainerItemProxy */;
-		};
-		FD9DB2210649CABB1C99F1F4C08FC7D0 /* PBXTargetDependency */ = {
+		11C119E4AE514EB1CD7B11F40BE4D070 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SSCustomTabbar;
 			target = 1FC14E4C0317FF7E3E52883B2B83DA13 /* SSCustomTabbar */;
-			targetProxy = 547B56B62E9650AEC4140C9DA9688A33 /* PBXContainerItemProxy */;
+			targetProxy = 01D674B402CCE9D0B0138C262FA801CE /* PBXContainerItemProxy */;
+		};
+		B9D7FCC3DB79749BB9B426AADE427014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SSCustomTabbar_Example";
+			target = A60B3B74BBB1D4420DD757F90CF7CCCC /* Pods-SSCustomTabbar_Example */;
+			targetProxy = 5AD9F71439012739860D713FF1F935A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		257497152829C177993B5EC99C1D227A /* Release */ = {
+		48D8CA2582D29AA0AD410688B1FC6699 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC10D502D3B925A2FAC7837CFEB7AC01 /* SSCustomTabbar.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSCustomTabbar/SSCustomTabbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSCustomTabbar/SSCustomTabbar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SSCustomTabbar/SSCustomTabbar.modulemap";
+				PRODUCT_MODULE_NAME = SSCustomTabbar;
+				PRODUCT_NAME = SSCustomTabbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4E88057406B711172D51005EC4E177F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B232FF61468F97F937CF720DF50DB934 /* Pods-SSCustomTabbar_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SSCustomTabbar_Example/Pods-SSCustomTabbar_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SSCustomTabbar_Example/Pods-SSCustomTabbar_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4FC29EFA3A3256080AFCF402CF7701EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC374BD14C4F30A51D6FE79D8B779E97 /* SSCustomTabbar.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSCustomTabbar/SSCustomTabbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSCustomTabbar/SSCustomTabbar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SSCustomTabbar/SSCustomTabbar.modulemap";
+				PRODUCT_MODULE_NAME = SSCustomTabbar;
+				PRODUCT_NAME = SSCustomTabbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		627CBE213311590A0EA83E047139B1D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 337DF2C5D8030191338A92715EA72B49 /* Pods-SSCustomTabbar_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SSCustomTabbar_Example/Pods-SSCustomTabbar_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SSCustomTabbar_Example/Pods-SSCustomTabbar_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -451,6 +595,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -478,89 +623,20 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		32E9A0692E853CE32ECDC6CB732F72C2 /* Release */ = {
+		A7DE14D43A172B9C676817A9D9077FC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21A8D3CAFB7634777EADBF3C3E2D650A /* SSCustomTabbar.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SSCustomTabbar/SSCustomTabbar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SSCustomTabbar/SSCustomTabbar-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SSCustomTabbar/SSCustomTabbar.modulemap";
-				PRODUCT_MODULE_NAME = SSCustomTabbar;
-				PRODUCT_NAME = SSCustomTabbar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		871E8AD2CBE624B74368B4A3811BF972 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B232FF61468F97F937CF720DF50DB934 /* Pods-SSCustomTabbar_Example.release.xcconfig */;
+			baseConfigurationReference = AF5D39AF5CC89874601B31847FF5FE38 /* Pods-SSCustomTabbar_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_MODULES = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SSCustomTabbar_Example/Pods-SSCustomTabbar_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SSCustomTabbar_Example/Pods-SSCustomTabbar_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9F1D396DFE0CDD000E3F105BEC1CC179 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 355D7233C00CE749F6608703F21455C9 /* Pods-SSCustomTabbar_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -583,48 +659,16 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DB53E8C877FB921F2F63BE732017519B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21A8D3CAFB7634777EADBF3C3E2D650A /* SSCustomTabbar.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SSCustomTabbar/SSCustomTabbar-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SSCustomTabbar/SSCustomTabbar-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SSCustomTabbar/SSCustomTabbar.modulemap";
-				PRODUCT_MODULE_NAME = SSCustomTabbar;
-				PRODUCT_NAME = SSCustomTabbar;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
+		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -647,6 +691,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -685,13 +730,13 @@
 			};
 			name = Debug;
 		};
-		F01E69B98F460A5D44EB318FC2CC50F0 /* Debug */ = {
+		B74143F61DB404F9B9EEF1CEF02FDB32 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF5D39AF5CC89874601B31847FF5FE38 /* Pods-SSCustomTabbar_Tests.debug.xcconfig */;
+			baseConfigurationReference = 355D7233C00CE749F6608703F21455C9 /* Pods-SSCustomTabbar_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -714,83 +759,47 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
-		};
-		F8817FCD9A96CEB162D660D17ED0EC5C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 337DF2C5D8030191338A92715EA72B49 /* Pods-SSCustomTabbar_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SSCustomTabbar_Example/Pods-SSCustomTabbar_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SSCustomTabbar_Example/Pods-SSCustomTabbar_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1F8CF25B335317B2C6CA25594802F47B /* Build configuration list for PBXNativeTarget "SSCustomTabbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48D8CA2582D29AA0AD410688B1FC6699 /* Debug */,
+				4FC29EFA3A3256080AFCF402CF7701EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A33BB78C33EEFB999F4995E3881D387 /* Build configuration list for PBXNativeTarget "Pods-SSCustomTabbar_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7DE14D43A172B9C676817A9D9077FC2 /* Debug */,
+				B74143F61DB404F9B9EEF1CEF02FDB32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
-				257497152829C177993B5EC99C1D227A /* Release */,
+				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
+				903A0004D3E6651EFD5D2E16214D101B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6EF328E8520938B439A6360B9D6AF236 /* Build configuration list for PBXNativeTarget "SSCustomTabbar" */ = {
+		6A88E30F919E91DC1854E4CE47A5ABE7 /* Build configuration list for PBXNativeTarget "Pods-SSCustomTabbar_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB53E8C877FB921F2F63BE732017519B /* Debug */,
-				32E9A0692E853CE32ECDC6CB732F72C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6F8FAFCC6C0D8ED61EE58A651FC335CE /* Build configuration list for PBXNativeTarget "Pods-SSCustomTabbar_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F01E69B98F460A5D44EB318FC2CC50F0 /* Debug */,
-				9F1D396DFE0CDD000E3F105BEC1CC179 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8D81E9BC46628BD18389DE8D852E3D0B /* Build configuration list for PBXNativeTarget "Pods-SSCustomTabbar_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F8817FCD9A96CEB162D660D17ED0EC5C /* Debug */,
-				871E8AD2CBE624B74368B4A3811BF972 /* Release */,
+				627CBE213311590A0EA83E047139B1D0 /* Debug */,
+				4E88057406B711172D51005EC4E177F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

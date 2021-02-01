@@ -10,7 +10,7 @@ import UIKit
 
 
 /// Default index value for priviousSelectedIndex
-private let defaultIndexValue = -1
+private let defaultIndexValue = 0
 
 public class SSCustomTabBarViewController: UITabBarController {
     
@@ -193,7 +193,7 @@ extension SSCustomTabBarViewController {
         
         guard let uSelf = self.tabBar as? SSCustomTabBar else { return }
             
-        UIView.animate(withDuration:animationDuration, delay: 0.0, usingSpringWithDamping: animationSpring, initialSpringVelocity: 0.0, options: [], animations: { () -> Void in
+        UIView.animate(withDuration: animationDuration, delay: 0.0, usingSpringWithDamping: animationSpring, initialSpringVelocity: 0.0, options: [], animations: { () -> Void in
             uSelf.setDefaultlayoutControlPoints(waveHeight: uSelf.minimalHeight, locationX: changeValue)
                 
         }, completion: { _ in
