@@ -34,9 +34,7 @@ struct TabItem: View {
                 NavigationLink(destination: PushedView(isTabBarHidden: self.$isTabBarHidden, showPushedView: self.$isNextActive), isActive: self.$isNextActive) {
                     EmptyView()
                 }
-                
                 VStack(spacing: 30) {
-                    
                     Button(action: {
                         self.isNextActive = true
                     }) {
@@ -69,8 +67,7 @@ struct ContentView: View {
         let vc3 = SwiftUITabView(content: UIHostingController(rootView: TabItem(text: "Video", isTabBarHidden: self.$isTabBarHidden)), title: "Video", selectedImage: "iconVideoSelected", unSelectedImage: "iconVideo")
         let vc4 = SwiftUITabView(content: UIHostingController(rootView: TabItem(text: "Profile", isTabBarHidden: self.$isTabBarHidden)), title: "Profile", selectedImage: "iconProfileSelected", unSelectedImage: "iconProfile")
         let vc5 = SwiftUITabView(content: UIHostingController(rootView: TabItem(text: "Chat", isTabBarHidden: self.$isTabBarHidden)), title: "Chat", selectedImage: "iconChatSelected", unSelectedImage: "iconChat")
-        
-        let tabBarView = SwiftUITabBarController(tabItems: [vc1, vc2, vc3, vc4, vc5], configuration: .constant(SSTabConfiguration()), isTabBarHidden: self.$isTabBarHidden)
+        let tabBarView = SwiftUITabBarController(tabItems: [vc1, vc2, vc3, vc4, vc5], configuration: .constant(SSTabConfiguration(reverseCurve:true)), isTabBarHidden: self.$isTabBarHidden)
         return tabBarView
     }
     
