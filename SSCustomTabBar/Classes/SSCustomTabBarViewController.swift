@@ -61,6 +61,13 @@ public class SSCustomTabBarViewController: UITabBarController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         self.setObserver()
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeGesture))
+        swipeRight.direction = .right
+        self.view.addGestureRecognizer(swipeRight)
+
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeGesture))
+        swipeLeft.direction = .left
+        self.view.addGestureRecognizer(swipeLeft)
         // Do any additional setup after loading the view.
     }
     
@@ -167,6 +174,13 @@ extension SSCustomTabBarViewController {
         
     }
     
+    @objc func handleSwipeGesture(_ gesture: UISwipeGestureRecognizer) {
+      if gesture.direction == .left {
+          selectedIndex += 1
+      } else if gesture.direction == .right {
+         selectedIndex -= 1
+      }
+    }
     
     /// Get specific view from
     ///
