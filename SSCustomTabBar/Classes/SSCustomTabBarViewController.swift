@@ -158,6 +158,12 @@ extension SSCustomTabBarViewController {
         })
         self.previousSelectedIndex = index
         performSpringAnimation(for: orderedTabBarItemViews[index], changeValue: changeValue)
+        
+        for (viewIndex, subViews) in self.tabBar.subviews.enumerated() {
+            for badgeView in subViews.subviews {
+                repositionBadgeView(badgeView, viewIndex == index ? -kUpAnimationPoint : 0)
+            }
+        }
     }
     
     /// Get specific view from
@@ -187,6 +193,68 @@ extension SSCustomTabBarViewController {
         UIView.animate(withDuration: animationDuration, delay: 0.0, usingSpringWithDamping: animationSpring, initialSpringVelocity: 0.0, options: .curveEaseInOut, animations: {
             view.frame = CGRect(x: view.frame.origin.x, y: view.frame.origin.y - self.kUpAnimationPoint, width: view.frame.width, height: view.frame.height)
         }, completion: nil)
+    }
+    
+}
+
+// MARK: - Badge related functions
+extension SSCustomTabBarViewController {
+    
+    /// Reposition the badge view for tabbar item
+    ///
+    /// - Parameters:
+    ///   - badgeView: The view of the badge
+    ///   - yPosition: The change value in y axis
+    func repositionBadgeView(_ badgeView: UIView, _ yPosition: CGFloat) {
+        if NSStringFromClass(badgeView.classForCoder) == "_UIBadgeView" {
+            badgeView.layer.transform = CATransform3DIdentity
+            badgeView.layer.transform = CATransform3DMakeTranslation(1.0, yPosition, 1.0)
+        }
+    }
+    
+    /// Add a badge value at provided index
+    ///
+    /// - Parameters:
+    ///    - index: index of the tabbar item to set badge
+    ///    - value: value to set as a badge
+    open func addOrUpdateBadgeValueAtIndex(index: Int, value: String) {
+        guard let item = getTabBarItemAtIndex(index) else { return }
+        item.badgeValue = value
+    }
+    
+    
+    /// Remove a badge value at provided index
+    ///
+    /// - Parameters:
+    ///    - index: index of the tabbar item to remove badge
+    open func removeBadgeValueAtIndex(index: Int) {
+        guard let item = getTabBarItemAtIndex(index) else { return }
+        item.badgeValue = nil
+    }
+    
+    
+    /// Remove all badge values
+    open func removeAllBadges() {
+        guard let numberOfItems = self.tabBar.items?.count else { return }
+        for index in 0...numberOfItems - 1 {
+            getTabBarItemAtIndex(index)?.badgeValue = nil
+        }
+    }
+    
+    
+    /// Provide a tabbar item at required index if present
+    ///
+    /// - Parameters:
+    ///    - index: index of the tabbar item to get
+    ///  - Return:TabBar item at the required index if present, otherwise returns nil
+    private func getTabBarItemAtIndex(_ index: Int) -> UITabBarItem? {
+        guard let items = self.tabBar.items else {
+            return nil
+        }
+        guard items.indices.contains(index) else {
+            return nil
+        }
+        return items[index]
     }
     
 }
