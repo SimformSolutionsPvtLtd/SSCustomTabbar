@@ -10,6 +10,8 @@
 
 ![Example](https://raw.githubusercontent.com/simformsolutions/SSCustomTabbar/master/SSCustomTabBar/Screenshots/customTabbar.gif)
 
+![Example](https://raw.githubusercontent.com/simformsolutions/SSCustomTabbar/master/SSCustomTabBar/Screenshots/reverseTabbar.gif)
+
 ## Requirements
 
 - iOS 11.0+
@@ -32,6 +34,10 @@ pod 'SSCustomTabbar'
 
 ### Set UITabBar to SSCustomTabBar
 ![alt text](https://raw.githubusercontent.com/simformsolutions/SSCustomTabbar/master/SSCustomTabBar/Screenshots/SSCustomTabBar.png)
+
+### Set UITabBar to SSCustomTabBar reverse curve
+![alt text](https://raw.githubusercontent.com/simformsolutions/SSCustomTabbar/master/SSCustomTabBar/Screenshots/SSCustomTabBarReverseCurve.png)
+
 
 ## SwiftUI Usage example
 
