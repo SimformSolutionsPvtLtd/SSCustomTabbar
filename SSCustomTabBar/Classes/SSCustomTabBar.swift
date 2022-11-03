@@ -202,32 +202,32 @@ extension SSCustomTabBar {
         let width = (UIScreen.main.bounds.width/CGFloat(self.items?.count ?? 0))
         leftPoint4.center = CGPoint(x: 0, y: minimalY+minimalHeight)
         rightPoint4.center = CGPoint(x: self.bounds.width, y: minimalY+minimalHeight)
-        let imaganaeryFram = CGRect(x: locationX-(width/2), y: minimalY, width: width, height: minimalHeight)
-        leftPoint3.center = CGPoint(x: imaganaeryFram.minX, y: imaganaeryFram.maxY)
-        let topOffset: CGFloat = imaganaeryFram.width / 4.3
-        let bottomOffset: CGFloat = imaganaeryFram.width / 4.5
-        leftPoint2.center = CGPoint(x: imaganaeryFram.midX, y: imaganaeryFram.minY)
-        leftPoint1.center = CGPoint(x: imaganaeryFram.minX + bottomOffset, y: imaganaeryFram.maxY)
-        centerPoint1.center = CGPoint(x: imaganaeryFram.midX - topOffset, y: imaganaeryFram.minY)
-        centerPoint2.center = CGPoint(x: imaganaeryFram.maxX, y: imaganaeryFram.maxY)
-        rightPoint1.center = CGPoint(x: imaganaeryFram.midX + topOffset, y: imaganaeryFram.minY)
-        rightPoint2.center = CGPoint(x: imaganaeryFram.maxX - bottomOffset, y: imaganaeryFram.maxY)
+        let imaginaryFrame = CGRect(x: locationX-(width/2), y: minimalY, width: width, height: minimalHeight)
+        leftPoint3.center = CGPoint(x: imaginaryFrame.minX, y: imaginaryFrame.maxY)
+        let topOffset: CGFloat = imaginaryFrame.width / 4.3
+        let bottomOffset: CGFloat = imaginaryFrame.width / 4.5
+        leftPoint2.center = CGPoint(x: imaginaryFrame.midX, y: imaginaryFrame.minY)
+        leftPoint1.center = CGPoint(x: imaginaryFrame.minX + bottomOffset, y: imaginaryFrame.maxY)
+        centerPoint1.center = CGPoint(x: imaginaryFrame.midX - topOffset, y: imaginaryFrame.minY)
+        centerPoint2.center = CGPoint(x: imaginaryFrame.maxX, y: imaginaryFrame.maxY)
+        rightPoint1.center = CGPoint(x: imaginaryFrame.midX + topOffset, y: imaginaryFrame.minY)
+        rightPoint2.center = CGPoint(x: imaginaryFrame.maxX - bottomOffset, y: imaginaryFrame.maxY)
     }
     
     func setReverselayoutControlPoints(waveHeight: CGFloat, locationX: CGFloat) {
         let width = (UIScreen.main.bounds.width/CGFloat(self.items?.count ?? 0))
         leftPoint4.center = CGPoint(x: 0, y: minimalY+minimalHeight)
         rightPoint4.center = CGPoint(x: self.bounds.width, y: -(minimalY+minimalHeight))
-        let imaganaeryFram = CGRect(x: locationX-(width/2), y: minimalY, width: width, height: minimalHeight)
-        leftPoint3.center = CGPoint(x: imaganaeryFram.minX, y: -imaganaeryFram.maxY)
-        let topOffset: CGFloat = imaganaeryFram.width / 4.3
-        let bottomOffset: CGFloat = imaganaeryFram.width / 4.5
-        leftPoint2.center = CGPoint(x: imaganaeryFram.midX, y: -imaganaeryFram.minY)
-        leftPoint1.center = CGPoint(x: imaganaeryFram.minX + bottomOffset, y: -imaganaeryFram.maxY)
-        centerPoint1.center = CGPoint(x: imaganaeryFram.midX - topOffset, y: -imaganaeryFram.minY)
-        centerPoint2.center = CGPoint(x: imaganaeryFram.maxX, y: -imaganaeryFram.maxY)
-        rightPoint1.center = CGPoint(x: imaganaeryFram.midX + topOffset, y: -imaganaeryFram.minY)
-        rightPoint2.center = CGPoint(x: imaganaeryFram.maxX - bottomOffset, y: -imaganaeryFram.maxY)
+        let imaginaryFrame = CGRect(x: locationX-(width/2), y: minimalY, width: width, height: minimalHeight)
+        leftPoint3.center = CGPoint(x: imaginaryFrame.minX, y: -imaginaryFrame.maxY)
+        let topOffset: CGFloat = imaginaryFrame.width / 4.3
+        let bottomOffset: CGFloat = imaginaryFrame.width / 4.5
+        leftPoint2.center = CGPoint(x: imaginaryFrame.midX, y: -imaginaryFrame.minY)
+        leftPoint1.center = CGPoint(x: imaginaryFrame.minX + bottomOffset, y: -imaginaryFrame.maxY)
+        centerPoint1.center = CGPoint(x: imaginaryFrame.midX - topOffset, y: -imaginaryFrame.minY)
+        centerPoint2.center = CGPoint(x: imaginaryFrame.maxX, y: -imaginaryFrame.maxY)
+        rightPoint1.center = CGPoint(x: imaginaryFrame.midX + topOffset, y: -imaginaryFrame.minY)
+        rightPoint2.center = CGPoint(x: imaginaryFrame.maxX - bottomOffset, y: -imaginaryFrame.maxY)
     }
     
     /// updateShapeLayer
