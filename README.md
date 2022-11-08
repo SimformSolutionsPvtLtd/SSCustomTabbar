@@ -110,6 +110,28 @@ You can change:
 
 ![alt text](https://raw.githubusercontent.com/simformsolutions/SSCustomTabbar/master/SSCustomTabBar/Screenshots/Description.png)
 
+
+## Adding Badge value
+![alt text](https://raw.githubusercontent.com/simformsolutions/SSCustomTabbar/master/SSCustomTabBar/Screenshots/SSCustomTabBarBadgeValue.png)
+
+Add/Update badge value:
+```
+let tabBarController = self.tabBarController as? SSCustomTabBarViewController
+tabBarController?.addOrUpdateBadgeValueAtIndex(index: 0, value: "Your Value Here")
+```
+
+Remove badge value:
+```
+let tabBarController = self.tabBarController as? SSCustomTabBarViewController
+tabBarController?.removeBadgeValueAtIndex(index: 1)
+```
+
+Remove all badge values:
+```
+let tabBarController = self.tabBarController as? SSCustomTabBarViewController
+tabBarController?.removeAllBadges()
+```
+
 ## Contribute
 
 We would love you for the contribution to SSCustomTabMenu, check the LICENSE file for more info.
