@@ -39,6 +39,12 @@ public class SSTabConfiguration {
     /// Shadow Offset
     public var shadowOffset: CGSize
     
+    /// Reverse Curve
+    public var reverseCurve: Bool
+    
+    /// Selected index
+    public var selectedIndex: Int
+    
     /// Initializer for Tabbar configuration
     /// - Parameters:
     ///   - barHeight: Bar height
@@ -50,7 +56,21 @@ public class SSTabConfiguration {
     ///   - shadowColor: Shadow Color
     ///   - shadowRadius: Shadow Radius
     ///   - shadowOffset: Shadow Offset
-    public init(barHeight: CGFloat? = nil, upAnimationPoint: CGFloat? = nil, layerFillColor: UIColor = .white, waveHeight: CGFloat = 17, selectedTabTintColor: UIColor = UIColor.orange, unselectedTabTintColor: UIColor = .black, shadowColor: UIColor = .black, shadowRadius: CGFloat = .zero, shadowOffset: CGSize = CGSize(width: 0, height: -1)) {
+    ///   - reverseCurve: Set reverse curve
+    ///   - selectedIndex: Index of selected tabbar item
+    public init(
+        barHeight: CGFloat? = nil,
+        upAnimationPoint: CGFloat? = nil,
+        layerFillColor: UIColor = .white,
+        waveHeight: CGFloat = 17,
+        selectedTabTintColor: UIColor = UIColor.orange,
+        unselectedTabTintColor: UIColor = .black,
+        shadowColor: UIColor = .black,
+        shadowRadius: CGFloat = .zero,
+        shadowOffset: CGSize = CGSize(width: 0, height: -1),
+        reverseCurve: Bool = false,
+        selectedIndex: Int = 0
+    ) {
         self.barHeight = barHeight
         self.upAnimationPoint = upAnimationPoint
         self.layerFillColor = layerFillColor
@@ -60,6 +80,8 @@ public class SSTabConfiguration {
         self.shadowColor = shadowColor
         self.shadowRadius = shadowRadius
         self.shadowOffset = shadowOffset
+        self.reverseCurve = reverseCurve
+        self.selectedIndex = selectedIndex
     }
     
 }
@@ -119,7 +141,6 @@ public struct SwiftUITabBarController: UIViewControllerRepresentable {
     private class SSBundle {}
     
     // MARK: - Initializers
-    
     /// SwiftUI Tabbar view controller
     /// - Parameters:
     ///   - tabItems: Array of TabItems of type SwiftUITabView
@@ -165,6 +186,11 @@ public struct SwiftUITabBarController: UIViewControllerRepresentable {
         tabBar.shadowOffset = configuration.shadowOffset
         tabBar.tintColor = configuration.selectedTabTintColor
         tabBar.isHidden = isTabBarHidden
+        tabBar.reverseCurve = configuration.reverseCurve
+        if let viewControllers = tabBarVC.viewControllers,
+           configuration.selectedIndex <= viewControllers.count {
+            tabBarVC.selectedIndex = configuration.selectedIndex
+        }
     }
     
     public static func refreshViews() {

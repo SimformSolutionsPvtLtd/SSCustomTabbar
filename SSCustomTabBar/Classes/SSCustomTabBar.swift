@@ -10,35 +10,29 @@ import UIKit
 
 public class SSCustomTabBar: UITabBar {
     
-    
     /// Fill color of back wave layer
     @IBInspectable var layerFillColor: UIColor {
         get {
             return UIColor(cgColor: kLayerFillColor)
-        }
-        set{
+        } set {
             kLayerFillColor = newValue.cgColor
         }
     }
     
-    
     /// Wave Height
     @IBInspectable var waveHeight: CGFloat {
-        get{
+        get {
             return self.minimalHeight
-        }
-        set{
+        } set {
             self.minimalHeight = newValue
         }
     }
-    
     
     /// Unselected item tint color
     @IBInspectable var unselectedTabTintColor: UIColor {
         get {
             return self.unselectedItemTintColor ?? .black
-        }
-        set{
+        } set {
             self.unselectedItemTintColor = newValue
         }
     }
@@ -47,8 +41,7 @@ public class SSCustomTabBar: UITabBar {
     @IBInspectable var shadowColor: UIColor {
         get {
             return UIColor(cgColor: self.layer.shadowColor ?? UIColor.clear.cgColor)
-        }
-        set{
+        } set {
             self.layer.shadowColor = newValue.cgColor
         }
     }
@@ -57,8 +50,7 @@ public class SSCustomTabBar: UITabBar {
     @IBInspectable var shadowRadius: CGFloat {
         get {
             return layer.shadowRadius
-        }
-        set{
+        } set {
             self.layer.shadowRadius = newValue
         }
     }
@@ -72,10 +64,20 @@ public class SSCustomTabBar: UITabBar {
         }
     }
     
+    /// Reverse Curve 
+    @IBInspectable var reverseCurve: Bool {
+        get {
+            return reverseCurveShape
+        } set {
+            self.reverseCurveShape = newValue
+        }
+    }
+    
     private var kLayerFillColor: CGColor = UIColor.blue.cgColor
     private var displayLink: CADisplayLink!
     private let tabBarShapeLayer = CAShapeLayer()
     internal var minimalHeight: CGFloat = 30
+    internal var reverseCurveShape: Bool = false
     private var minimalY: CGFloat {
         get {
             return -minimalHeight
@@ -89,7 +91,6 @@ public class SSCustomTabBar: UITabBar {
     }
     
     /// Controll point of wave
-    
     private var leftPoint4 = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 3.0, height: 3.0)) {
         didSet {
             leftPoint4.backgroundColor = .clear
@@ -136,9 +137,7 @@ public class SSCustomTabBar: UITabBar {
         }
     }
     
-    
     /// Draws the receiver’s image within the passed-in rectangle.
-    ///
     /// - Parameter rect: rect of view
     override public func draw(_ rect: CGRect) {
         super.draw(rect)
@@ -152,7 +151,6 @@ public class SSCustomTabBar: UITabBar {
     
 }
 
-
 // MARK: - Setup Tabbar
 extension SSCustomTabBar {
     
@@ -162,13 +160,11 @@ extension SSCustomTabBar {
         self.backgroundImage = UIImage()
         self.shadowImage = UIImage()
         self.clipsToBounds = false
-        
         /// Shadow
         self.layer.shadowOffset = shadowOffset
         self.layer.shadowRadius = shadowRadius
         self.layer.shadowColor = shadowColor.cgColor
         self.layer.shadowOpacity = 1.0
-        
         self.addSubview(leftPoint4)
         self.addSubview(leftPoint3)
         self.addSubview(leftPoint2)
@@ -181,61 +177,67 @@ extension SSCustomTabBar {
         self.displayLink = CADisplayLink(target: self, selector: #selector(updateShapeLayer))
         self.displayLink?.add(to: RunLoop.main, forMode: RunLoop.Mode.default)
         self.displayLink?.isPaused = true
-        
         tabBarShapeLayer.frame = CGRect(x: 0.0, y: 0, width: self.bounds.width, height: self.bounds.height)
         tabBarShapeLayer.actions = ["position" : NSNull(), "bounds" : NSNull(), "path" : NSNull()]
         tabBarShapeLayer.fillColor = kLayerFillColor
         self.layer.insertSublayer(tabBarShapeLayer, at: 0)
-        
         let width = UIScreen.main.bounds.width/CGFloat(self.items?.count ?? 0)
         if let selectedItem = self.selectedItem {
             let index = (self.items?.firstIndex(of: selectedItem) ?? 0)+1
             let changeValue = (width*(CGFloat(index)))-(width/2)
-            self.setDefaultlayoutControlPoints(waveHeight: minimalHeight, locationX: changeValue)
+            if(reverseCurveShape) {
+                self.setReverselayoutControlPoints(waveHeight: minimalHeight, locationX: changeValue)
+            } else {
+                self.setDefaultlayoutControlPoints(waveHeight: minimalHeight, locationX: changeValue)
+            }
             self.updateShapeLayer()
         }
     }
 }
 
-
-
 // MARK: - Set layer path
 extension SSCustomTabBar {
     
     func setDefaultlayoutControlPoints(waveHeight: CGFloat, locationX: CGFloat) {
-        
         let width = (UIScreen.main.bounds.width/CGFloat(self.items?.count ?? 0))
         leftPoint4.center = CGPoint(x: 0, y: minimalY+minimalHeight)
         rightPoint4.center = CGPoint(x: self.bounds.width, y: minimalY+minimalHeight)
-        
-        let imaganaeryFram = CGRect(x: locationX-(width/2), y: minimalY, width: width, height: minimalHeight)
-        
-        leftPoint3.center = CGPoint(x: imaganaeryFram.minX, y: imaganaeryFram.maxY)
-        
-        
-        let topOffset: CGFloat = imaganaeryFram.width / 4.3
-        let bottomOffset: CGFloat = imaganaeryFram.width / 4.5
-        
-        leftPoint2.center = CGPoint(x: imaganaeryFram.midX, y: imaganaeryFram.minY)
-        leftPoint1.center = CGPoint(x: imaganaeryFram.minX + bottomOffset, y: imaganaeryFram.maxY)
-        centerPoint1.center = CGPoint(x: imaganaeryFram.midX - topOffset, y: imaganaeryFram.minY)
-        centerPoint2.center = CGPoint(x: imaganaeryFram.maxX, y: imaganaeryFram.maxY)
-        rightPoint1.center = CGPoint(x: imaganaeryFram.midX + topOffset, y: imaganaeryFram.minY)
-        rightPoint2.center = CGPoint(x: imaganaeryFram.maxX - bottomOffset, y: imaganaeryFram.maxY)
+        let imaginaryFrame = CGRect(x: locationX-(width/2), y: minimalY, width: width, height: minimalHeight)
+        leftPoint3.center = CGPoint(x: imaginaryFrame.minX, y: imaginaryFrame.maxY)
+        let topOffset: CGFloat = imaginaryFrame.width / 4.3
+        let bottomOffset: CGFloat = imaginaryFrame.width / 4.5
+        leftPoint2.center = CGPoint(x: imaginaryFrame.midX, y: imaginaryFrame.minY)
+        leftPoint1.center = CGPoint(x: imaginaryFrame.minX + bottomOffset, y: imaginaryFrame.maxY)
+        centerPoint1.center = CGPoint(x: imaginaryFrame.midX - topOffset, y: imaginaryFrame.minY)
+        centerPoint2.center = CGPoint(x: imaginaryFrame.maxX, y: imaginaryFrame.maxY)
+        rightPoint1.center = CGPoint(x: imaginaryFrame.midX + topOffset, y: imaginaryFrame.minY)
+        rightPoint2.center = CGPoint(x: imaginaryFrame.maxX - bottomOffset, y: imaginaryFrame.maxY)
     }
     
+    func setReverselayoutControlPoints(waveHeight: CGFloat, locationX: CGFloat) {
+        let width = (UIScreen.main.bounds.width/CGFloat(self.items?.count ?? 0))
+        leftPoint4.center = CGPoint(x: 0, y: minimalY+minimalHeight)
+        rightPoint4.center = CGPoint(x: self.bounds.width, y: -(minimalY+minimalHeight))
+        let imaginaryFrame = CGRect(x: locationX-(width/2), y: minimalY, width: width, height: minimalHeight)
+        leftPoint3.center = CGPoint(x: imaginaryFrame.minX, y: -imaginaryFrame.maxY)
+        let topOffset: CGFloat = imaginaryFrame.width / 4.3
+        let bottomOffset: CGFloat = imaginaryFrame.width / 4.5
+        leftPoint2.center = CGPoint(x: imaginaryFrame.midX, y: -imaginaryFrame.minY)
+        leftPoint1.center = CGPoint(x: imaginaryFrame.minX + bottomOffset, y: -imaginaryFrame.maxY)
+        centerPoint1.center = CGPoint(x: imaginaryFrame.midX - topOffset, y: -imaginaryFrame.minY)
+        centerPoint2.center = CGPoint(x: imaginaryFrame.maxX, y: -imaginaryFrame.maxY)
+        rightPoint1.center = CGPoint(x: imaginaryFrame.midX + topOffset, y: -imaginaryFrame.minY)
+        rightPoint2.center = CGPoint(x: imaginaryFrame.maxX - bottomOffset, y: -imaginaryFrame.maxY)
+    }
     
     /// updateShapeLayer
     @objc func updateShapeLayer() {
         tabBarShapeLayer.path = getCurrentPath()
     }
     
-    
     /// Get path
-    ///
     /// - Returns: get current index path
     func getCurrentPath() -> CGPath {
-        
         let bezierPath = UIBezierPath()
         bezierPath.move(to: CGPoint(x: 0.0, y: UIScreen.main.bounds.height))
         bezierPath.addLine(to: CGPoint(x: 0.0, y: leftPoint4.viewCenter(usePresentationLayerIfPossible: animating).y))
@@ -245,18 +247,16 @@ extension SSCustomTabBar {
             controlPoint1: leftPoint1.viewCenter(usePresentationLayerIfPossible: animating),
             controlPoint2: centerPoint1.viewCenter(usePresentationLayerIfPossible: animating)
         )
-        
         bezierPath.addCurve(
             to: centerPoint2.viewCenter(usePresentationLayerIfPossible: animating),
             controlPoint1: rightPoint1.viewCenter(usePresentationLayerIfPossible: animating),
             controlPoint2: rightPoint2.viewCenter(usePresentationLayerIfPossible: animating)
         )
-        
         bezierPath.addLine(to: leftPoint3.viewCenter(usePresentationLayerIfPossible: animating))
-        
         bezierPath.addLine(to: rightPoint4.viewCenter(usePresentationLayerIfPossible: animating))
         bezierPath.addLine(to: CGPoint(x: UIScreen.main.bounds.width, y: UIScreen.main.bounds.height))
         bezierPath.close()
         return bezierPath.cgPath
     }
+    
 }

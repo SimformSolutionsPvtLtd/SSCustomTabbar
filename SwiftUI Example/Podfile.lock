@@ -1,5 +1,5 @@
 PODS:
-  - SSCustomTabbar (2.0.6)
+  - SSCustomTabbar (2.0.7)
 
 DEPENDENCIES:
   - SSCustomTabbar (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SSCustomTabbar: a52533e429bd40f52ce8d7ecb801f3521fbd56a0
+  SSCustomTabbar: 643270b6b771125ec173f58812cfab3da0296fd8
 
 PODFILE CHECKSUM: c2ba52075d251c51d90601a7a42b231baf400bcc
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.11.3

@@ -10,6 +10,8 @@
 
 ![Example](https://raw.githubusercontent.com/simformsolutions/SSCustomTabbar/master/SSCustomTabBar/Screenshots/customTabbar.gif)
 
+![Example](https://raw.githubusercontent.com/simformsolutions/SSCustomTabbar/master/SSCustomTabBar/Screenshots/reverseTabbar.gif)
+
 ## Requirements
 
 - iOS 11.0+
@@ -32,6 +34,10 @@ pod 'SSCustomTabbar'
 
 ### Set UITabBar to SSCustomTabBar
 ![alt text](https://raw.githubusercontent.com/simformsolutions/SSCustomTabbar/master/SSCustomTabBar/Screenshots/SSCustomTabBar.png)
+
+### Set UITabBar to SSCustomTabBar reverse curve
+![alt text](https://raw.githubusercontent.com/simformsolutions/SSCustomTabbar/master/SSCustomTabBar/Screenshots/SSCustomTabBarReverseCurve.png)
+
 
 ## SwiftUI Usage example
 
@@ -103,6 +109,28 @@ You can change:
 ![alt text](https://raw.githubusercontent.com/simformsolutions/SSCustomTabbar/master/SSCustomTabBar/Screenshots/layerColorWaveHightUnselectedTintColor.png)
 
 ![alt text](https://raw.githubusercontent.com/simformsolutions/SSCustomTabbar/master/SSCustomTabBar/Screenshots/Description.png)
+
+
+## Adding Badge value
+![alt text](https://raw.githubusercontent.com/simformsolutions/SSCustomTabbar/master/SSCustomTabBar/Screenshots/SSCustomTabBarBadgeValue.png)
+
+Add/Update badge value:
+```
+let tabBarController = self.tabBarController as? SSCustomTabBarViewController
+tabBarController?.addOrUpdateBadgeValueAtIndex(index: 0, value: "Your Value Here")
+```
+
+Remove badge value:
+```
+let tabBarController = self.tabBarController as? SSCustomTabBarViewController
+tabBarController?.removeBadgeValueAtIndex(index: 1)
+```
+
+Remove all badge values:
+```
+let tabBarController = self.tabBarController as? SSCustomTabBarViewController
+tabBarController?.removeAllBadges()
+```
 
 ## Contribute
 
